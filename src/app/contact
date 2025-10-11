@@ -1,0 +1,35 @@
+export const metadata = { title: "Contact • HappyHomeByEnela" };
+
+export default function Contact() {
+  return (
+    <main className="mx-auto max-w-3xl px-6 py-12">
+      <h1 className="text-3xl font-bold">Get a Free Quote</h1>
+      <p className="text-slate-600 mt-2">
+        We reply within 24 hours. St. Louis in-home and virtual sessions anywhere.
+      </p>
+
+      <form
+        action="https://formspree.io/f/xqaqkzag"
+        method="POST"
+        className="mt-6 grid gap-3"
+      >
+        <div className="grid gap-3 sm:grid-cols-2">
+          <input name="name" placeholder="Name" className="border rounded-md p-3" required />
+          <input name="email" type="email" placeholder="Email" className="border rounded-md p-3" required />
+        </div>
+        <input name="phone" placeholder="Phone (optional)" className="border rounded-md p-3" />
+        <select name="service" className="border rounded-md p-3">
+          <option>Room Refresh</option>
+          <option>Organization</option>
+          <option>Photo Digitizing</option>
+          <option>Other</option>
+        </select>
+        <textarea name="message" placeholder="Tell us about your project…" className="border rounded-md p-3 min-h-[130px]" />
+        <button className="rounded-md bg-pink-500 px-4 py-3 text-white font-semibold" type="submit">
+          Send
+        </button>
+        <p className="text-xs text-slate-500">We never share your info.</p>
+      </form>
+    </main>
+  );
+}
