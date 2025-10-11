@@ -1,0 +1,39 @@
+export const metadata = { title: "Reviews • HappyHomeByEnela" };
+
+export default function Reviews() {
+  return (
+    <main className="mx-auto max-w-3xl px-6 py-12">
+      <h1 className="text-3xl font-bold">Customer Reviews</h1>
+
+      <section className="mt-6 space-y-4">
+        <blockquote className="rounded-xl border p-4">
+          “Enela transformed our living room in one afternoon. It finally feels like home.”
+          <div className="text-slate-500 text-sm mt-1">— S., St. Louis</div>
+        </blockquote>
+        <blockquote className="rounded-xl border p-4">
+          “The pantry system is a lifesaver. We actually keep it organized now!”
+          <div className="text-slate-500 text-sm mt-1">— A., Brentwood</div>
+        </blockquote>
+      </section>
+
+      <section className="mt-10">
+        <h2 className="text-xl font-semibold">Share your experience</h2>
+        <form
+          action="https://formspree.io/f/xqaqkzag"
+          method="POST"
+          className="mt-4 grid gap-3"
+        >
+          <input name="name" placeholder="Your name" className="border rounded-md p-3" required />
+          <input name="email" type="email" placeholder="Email (not shown)" className="border rounded-md p-3" required />
+          <textarea name="review" placeholder="Your review…" className="border rounded-md p-3 min-h-[120px]" required />
+          <button className="rounded-md bg-pink-500 px-4 py-3 text-white font-semibold" type="submit">
+            Submit review
+          </button>
+          <p className="text-xs text-slate-500">
+            By submitting you agree we may publish your review and first initial.
+          </p>
+        </form>
+      </section>
+    </main>
+  );
+}
