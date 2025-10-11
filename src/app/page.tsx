@@ -1,88 +1,94 @@
-import Image from "next/image";
-
+// src/app/page.tsx
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="mx-auto max-w-4xl px-6 py-12">
+      {/* Hero */}
+      <section>
+        <h1 className="text-4xl font-bold tracking-tight">
+          HappyHome<span className="text-pink-500">ByEnela</span>
+        </h1>
+        <p className="mt-3 text-slate-600">
+          Home styling • Organization • Photo digitizing in St. Louis.
+          We make spaces calm, beautiful, and easy to live in—plus we preserve
+          your memories with high-quality scanning and auto-crop.
+        </p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+        <div className="mt-6 flex flex-wrap gap-3">
+          <a href="/contact" className="rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold">
+            Get a free quote
+          </a>
+          <a href="/services" className="rounded-full border px-5 py-2.5">
+            View services
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
+      </section>
+
+      {/* Services summary */}
+      <section className="mt-12 grid gap-4 sm:grid-cols-3">
+        <a href="/services#refresh" className="rounded-xl border p-4 hover:bg-slate-50 transition">
+          <h3 className="font-semibold">Room Refresh</h3>
+          <p className="text-sm text-slate-600 mt-1">
+            Fast makeovers: layout, color, décor, and styling.
+          </p>
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
+        <a href="/services#organize" className="rounded-xl border p-4 hover:bg-slate-50 transition">
+          <h3 className="font-semibold">Organization</h3>
+          <p className="text-sm text-slate-600 mt-1">
+            Closets, pantry, garage, and whole-home systems.
+          </p>
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
+        <a href="/services#photos" className="rounded-xl border p-4 hover:bg-slate-50 transition">
+          <h3 className="font-semibold">Photo Digitizing</h3>
+          <p className="text-sm text-slate-600 mt-1">
+            Bulk scanning with dust cleanup and precise auto-crop.
+          </p>
         </a>
-      </footer>
-    </div>
+      </section>
+
+      {/* Before/after placeholder gallery */}
+      <section className="mt-12">
+        <h2 className="text-2xl font-semibold">Before & After</h2>
+        <p className="text-slate-600 mt-1">
+          Replace these images later in <code>/public</code>. They use the template’s default styles.
+        </p>
+        <div className="mt-4 grid gap-3 grid-cols-2 sm:grid-cols-4">
+          <img className="rounded-lg border" src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=800&auto=format&fit=crop" alt="Styled room" />
+          <img className="rounded-lg border" src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?q=80&w=800&auto=format&fit=crop" alt="Organized kitchen" />
+          <img className="rounded-lg border" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=800&auto=format&fit=crop" alt="Cozy bedroom" />
+          <img className="rounded-lg border" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=800&auto=format&fit=crop" alt="Minimal office" />
+        </div>
+      </section>
+
+      {/* Reviews + affiliates */}
+      <section className="mt-12 grid gap-4 md:grid-cols-2">
+        <div className="rounded-xl border p-5">
+          <h3 className="font-semibold">What clients say</h3>
+          <p className="text-sm text-slate-600 mt-2">
+            “Enela transformed our living room in one afternoon. It finally feels like home.”
+            — S., St. Louis
+          </p>
+          <a href="/reviews" className="mt-3 inline-block text-pink-600 font-semibold">Read & leave a review →</a>
+        </div>
+        <div className="rounded-xl border p-5">
+          <h3 className="font-semibold">Featured partners</h3>
+          <ul className="text-sm text-slate-600 mt-2 list-disc ml-5 space-y-1">
+            <li><a className="text-pink-600" href="https://www.amazon.com/?tag=YOURTAG-20">Amazon (affiliate)</a></li>
+            <li><a className="text-pink-600" href="https://www.containerstore.com/?aid=YOURID">The Container Store (affiliate)</a></li>
+            <li><a className="text-pink-600" href="https://example.com/?ref=yourcode">Local partner</a></li>
+          </ul>
+          <a href="/affiliates" className="mt-3 inline-block text-pink-600 font-semibold">See all affiliates →</a>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="mt-12 rounded-2xl border p-6 text-center">
+        <h3 className="text-xl font-semibold">Ready to refresh your space?</h3>
+        <p className="text-slate-600 mt-1">Free consults in St. Louis and virtual sessions anywhere.</p>
+        <a href="/contact" className="mt-4 inline-block rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold">
+          Book a free consult
+        </a>
+      </section>
+    </main>
   );
 }
+
