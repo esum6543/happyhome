@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --brand: #ec4899;   /* pink */
+  --brand-2: #f472b6;
 }
 
 @theme inline {
