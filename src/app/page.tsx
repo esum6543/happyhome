@@ -49,7 +49,7 @@ export default function Home() {
       <section className="mt-12">
         <h2 className="text-2xl font-semibold">Before & After</h2>
         <p className="text-slate-600 mt-1">
-          Replace these images later in <code>/public</code>. They use the template’s default styles.
+          
         </p>
         <div className="mt-4 grid gap-3 grid-cols-2 sm:grid-cols-4">
           <img className="rounded-lg border" src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=800&auto=format&fit=crop" alt="Styled room" />
