@@ -20,6 +20,43 @@ export default function Home() {
           >
             Get a free quote
           </a>
+          export const metadata = { title: "Services • HappyHomeByEnela" };
+export default function Services() {
+  return (
+    <main className="mx-auto max-w-4xl px-6 py-12">
+      <h1 className="text-3xl font-bold">Services</h1>
+      <p className="text-slate-600 mt-2">Room refresh, organization, and photo digitizing.</p>
+    </main>
+  );
+}
+export const metadata = { title: "Contact • HappyHomeByEnela" };
+export default function Contact() {
+  return (
+    <main className="mx-auto max-w-3xl px-6 py-12">
+      <h1 className="text-3xl font-bold">Get a Free Quote</h1>
+      <p className="text-slate-600 mt-2">Use the form to reach us.</p>
+    </main>
+  );
+}
+export const metadata = { title: "Reviews • HappyHomeByEnela" };
+export default function Reviews() {
+  return (
+    <main className="mx-auto max-w-3xl px-6 py-12">
+      <h1 className="text-3xl font-bold">Customer Reviews</h1>
+      <p className="text-slate-600 mt-2">Coming soon.</p>
+    </main>
+  );
+}
+export const metadata = { title: "Affiliates • HappyHomeByEnela" };
+export default function Affiliates() {
+  return (
+    <main className="mx-auto max-w-4xl px-6 py-12">
+      <h1 className="text-3xl font-bold">Affiliate Partners</h1>
+      <p className="text-slate-600 mt-2">Our recommended products and stores.</p>
+    </main>
+  );
+}
+
           <a
             href="/services"
             className="rounded-full border px-5 py-2.5"
