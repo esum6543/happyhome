@@ -14,7 +14,7 @@ export default function Home() {
         </p>
 
         <div className="mt-6 flex flex-wrap gap-3">
-          <a href="/contact" className="rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold">
+          <a href="/contact">Get a free quote className="rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold">
             Get a free quote
           </a>
           <a href="/services" className="rounded-full border px-5 py-2.5">
@@ -25,19 +25,19 @@ export default function Home() {
 
       {/* Services summary */}
       <section className="mt-12 grid gap-4 sm:grid-cols-3">
-        <a href="/services#refresh" className="rounded-xl border p-4 hover:bg-slate-50 transition">
+        <a href="/services">View services className="rounded-xl border p-4 hover:bg-slate-50 transition">
           <h3 className="font-semibold">Room Refresh</h3>
           <p className="text-sm text-slate-600 mt-1">
             Fast makeovers: layout, color, décor, and styling.
           </p>
         </a>
-        <a href="/services#organize" className="rounded-xl border p-4 hover:bg-slate-50 transition">
+        <a href="/services">View services</a> className="rounded-xl border p-4 hover:bg-slate-50 transition">
           <h3 className="font-semibold">Organization</h3>
           <p className="text-sm text-slate-600 mt-1">
             Closets, pantry, garage, and whole-home systems.
           </p>
         </a>
-        <a href="/services#photos" className="rounded-xl border p-4 hover:bg-slate-50 transition">
+        <a href="/services">View services className="rounded-xl border p-4 hover:bg-slate-50 transition">
           <h3 className="font-semibold">Photo Digitizing</h3>
           <p className="text-sm text-slate-600 mt-1">
             Bulk scanning with dust cleanup and precise auto-crop.
