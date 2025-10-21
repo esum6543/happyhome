@@ -1,5 +1,9 @@
 export default function ThankYouPage() {
   return (
+    <input type="hidden" name="_redirect" value="/thank-you" />
+<input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
+action="https://formspree.io/f/xqaqkzag"
+
     <main className="mx-auto max-w-4xl px-6 py-12">
       <section className="rounded-2xl border p-8 text-center shadow-sm">
         <h1 className="text-3xl font-bold tracking-tight text-pink-600">
