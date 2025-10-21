@@ -6,6 +6,7 @@ export default function ContactPage() {
         <p className="mt-3 text-slate-600">
           We’ll respond within 1–2 business days. Free consults in St. Louis and virtual sessions anywhere.
         </p>
+
         <form
           className="mt-6 grid gap-4"
           action="https://formspree.io/f/YOUR_FORMSPREE_ID"
@@ -31,4 +32,3 @@ export default function ContactPage() {
     </main>
   );
 }
-
