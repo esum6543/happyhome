@@ -14,13 +14,13 @@ export default function ThankYouPage() {
             className="rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold hover:bg-pink-600 transition"
           >
             Back to Home
-          </a>
+          </Link>
           <a
             href="/services"
             className="rounded-full border px-5 py-2.5 hover:bg-slate-50 transition"
           >
             View Services
-          </a>
+          </Link>
         </div>
       </section>
     </main>
