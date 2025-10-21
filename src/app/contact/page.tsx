@@ -9,7 +9,7 @@ export default function ContactPage() {
 
         <form
           className="mt-6 grid gap-4"
-          action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+          action="https://formspree.io/f/xqaqkzag"
           method="POST"
         >
           <label className="grid gap-1">
