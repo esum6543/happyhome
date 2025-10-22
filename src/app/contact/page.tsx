@@ -13,6 +13,7 @@ export default function ContactPage() {
           className="mt-6 grid gap-4"
           action="https://formspree.io/f/xqaqkzag"
           method="POST"
+          <input type="hidden" name="_redirect" value="https://happyhomebyenela.com/thank-you" />
         >
           <label className="grid gap-1">
             <span>Name</span>
@@ -46,6 +47,7 @@ export default function ContactPage() {
               className="rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold hover:bg-pink-600 transition"
             >
               Back to Home
+              
             </Link>
           </div>
         </form>
