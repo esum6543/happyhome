@@ -1,6 +1,40 @@
-import Link from "next/link";
+"use client";
+import { FormEvent, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function ContactPage() {
+  const router = useRouter();
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();                 // ⛔️ stop normal form navigation
+    setSubmitting(true);
+    setError(null);
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      const res = await fetch("https://formspree.io/f/xqaqkzag", {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: data,
+      });
+
+      if (res.ok) {
+        router.push("/thank-you");      // ✅ YOUR page (then it auto-redirects home)
+      } else {
+        const j = await res.json().catch(() => ({} as any));
+        setError(j?.errors?.[0]?.message || "Something went wrong. Please try again.");
+      }
+    } catch {
+      setError("Network error. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
+  }
+
   return (
     <main className="mx-auto max-w-4xl px-6 py-12">
       <section>
@@ -9,15 +43,8 @@ export default function ContactPage() {
           We’ll respond within 1–2 business days. Free consults in St. Louis and virtual sessions anywhere.
         </p>
 
-        <form
-          className="mt-6 grid gap-4"
-          action="https://formspree.io/f/xqaqkzag"
-          method="POST"
-        >
-          {/* ✅ redirect to your thank-you page (use full URL so Formspree obeys it) */}
-          <input type="hidden" name="_redirect" value="https://happyhomebyenela.com/thank-you" />
-
-          {/* ✅ honeypot spam trap */}
+        <form className="mt-6 grid gap-4" onSubmit={onSubmit}>
+          {/* Honeypot spam trap */}
           <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
 
           <label className="grid gap-1">
@@ -35,19 +62,15 @@ export default function ContactPage() {
             <textarea name="message" rows={5} required className="block w-full border p-2 rounded" />
           </label>
 
-          <button type="submit" className="rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold">
-            Send
+          <button
+            type="submit"
+            disabled={submitting}
+            className="rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold disabled:opacity-60"
+          >
+            {submitting ? "Sending..." : "Send"}
           </button>
 
-          {/* optional manual back-to-home button */}
-          <div className="mt-8 flex justify-center">
-            <Link
-              href="/"
-              className="rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold hover:bg-pink-600 transition"
-            >
-              Back to Home
-            </Link>
-          </div>
+          {error && <p className="text-red-600 text-sm mt-2">{error}</p>}
         </form>
       </section>
     </main>
