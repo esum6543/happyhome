@@ -2,13 +2,16 @@
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 
+type FormspreeErrorItem = { message?: string };
+type FormspreeErrorResponse = { errors?: FormspreeErrorItem[] };
+
 export default function ContactPage() {
   const router = useRouter();
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();                 // ⛔️ stop normal form navigation
+    e.preventDefault();
     setSubmitting(true);
     setError(null);
 
@@ -23,11 +26,24 @@ export default function ContactPage() {
       });
 
       if (res.ok) {
-        router.push("/thank-you");      // ✅ YOUR page (then it auto-redirects home)
-      } else {
-        const j = await res.json().catch(() => ({} as any));
-        setError(j?.errors?.[0]?.message || "Something went wrong. Please try again.");
+        router.push("/thank-you"); // go to your thank-you page (which auto-redirects home)
+        return;
       }
+
+      // Try to read a Formspree error message without using `any`
+      let msg = "Something went wrong. Please try again.";
+      try {
+        const j: unknown = await res.json();
+        if (j && typeof j === "object" && "errors" in j) {
+          const errs = (j as FormspreeErrorResponse).errors;
+          if (Array.isArray(errs) && errs[0]?.message) {
+            msg = String(errs[0].message);
+          }
+        }
+      } catch {
+        // ignore JSON parse error, keep default msg
+      }
+      setError(msg);
     } catch {
       setError("Network error. Please try again.");
     } finally {
@@ -76,4 +92,5 @@ export default function ContactPage() {
     </main>
   );
 }
+
 
