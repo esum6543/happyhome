@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
@@ -18,15 +17,9 @@ export default function ThankYouPage() {
         <p className="mt-4 text-slate-600">
           Your message was sent successfully. You’ll be redirected to the home page shortly.
         </p>
-        <p className="mt-6 text-sm text-slate-500">(Or click below if not redirected)</p>
-        <div className="mt-3">
-          <Link
-            href="/"
-            className="inline-block rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold hover:bg-pink-600 transition"
-          >
-            Go to Home
-          </Link>
-        </div>
+        <p className="mt-6 text-sm text-slate-500">
+          If nothing happens, refresh the page.
+        </p>
       </section>
     </main>
   );
