@@ -27,8 +27,17 @@ export default function ContactPage() {
           <button type="submit" className="rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold">
             Send
           </button>
-          <input type="hidden" name="_redirect" value="/" />
+          <input type="hidden" name="_redirect" value="Thank you, please allow 2-3 bussiness days." />
           <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
+          <div className="mt-8 flex justify-center gap-3 flex-wrap">
+  <Link
+    href="/"
+    className="rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold hover:bg-pink-600 transition"
+  >
+    Back to Home
+  </Link>
+</div>
+
         </form>
       </section>
     </main>
