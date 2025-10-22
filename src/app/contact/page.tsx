@@ -13,8 +13,13 @@ export default function ContactPage() {
           className="mt-6 grid gap-4"
           action="https://formspree.io/f/xqaqkzag"
           method="POST"
-          <input type="hidden" name="_redirect" value="https://happyhomebyenela.com/thank-you" />
         >
+          {/* ✅ redirect to your thank-you page (use full URL so Formspree obeys it) */}
+          <input type="hidden" name="_redirect" value="https://happyhomebyenela.com/thank-you" />
+
+          {/* ✅ honeypot spam trap */}
+          <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
+
           <label className="grid gap-1">
             <span>Name</span>
             <input name="name" required className="block w-full border p-2 rounded" />
@@ -34,12 +39,6 @@ export default function ContactPage() {
             Send
           </button>
 
-          {/* ✅ redirect to your thank-you page */}
-          <input type="hidden" name="_redirect" value="/thank-you" />
-
-          {/* ✅ honeypot spam trap */}
-          <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
-
           {/* optional manual back-to-home button */}
           <div className="mt-8 flex justify-center">
             <Link
@@ -47,7 +46,6 @@ export default function ContactPage() {
               className="rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold hover:bg-pink-600 transition"
             >
               Back to Home
-              
             </Link>
           </div>
         </form>
@@ -55,3 +53,4 @@ export default function ContactPage() {
     </main>
   );
 }
+
