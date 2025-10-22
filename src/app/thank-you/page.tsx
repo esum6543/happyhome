@@ -4,10 +4,9 @@ import { useRouter } from "next/navigation";
 
 export default function ThankYouPage() {
   const router = useRouter();
-
   useEffect(() => {
-    const t = setTimeout(() => router.push("/"), 3000); // auto-redirect home
-    return () => clearTimeout(t);
+    const timer = setTimeout(() => router.push("/"), 3000);
+    return () => clearTimeout(timer);
   }, [router]);
 
   return (
@@ -15,10 +14,8 @@ export default function ThankYouPage() {
       <section className="rounded-2xl border p-8 shadow-sm">
         <h1 className="text-3xl font-bold tracking-tight text-pink-600">Thank you!</h1>
         <p className="mt-4 text-slate-600">
-          Your message was sent successfully. You’ll be redirected to the home page shortly.
-        </p>
-        <p className="mt-6 text-sm text-slate-500">
-          If nothing happens, refresh the page.
+          Your message was sent successfully.<br />
+          You’ll be redirected to the home page shortly.
         </p>
       </section>
     </main>
