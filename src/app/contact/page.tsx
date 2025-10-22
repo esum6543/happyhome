@@ -27,7 +27,7 @@ export default function ContactPage() {
           <button type="submit" className="rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold">
             Send
           </button>
-          <input type="hidden" name="_redirect" value="/thank-you" />
+          <input type="hidden" name="_redirect" value="/" />
           <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
         </form>
       </section>
