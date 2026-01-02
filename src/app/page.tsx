@@ -24,20 +24,35 @@ export default function Home() {
       </section>
 
       {/* Services summary */}
-      <section className="mt-12 grid gap-4 sm:grid-cols-3">
-        <a href="/services" className="rounded-xl border p-4 hover:bg-slate-50 transition">
-          <h3 className="font-semibold">Room Refresh</h3>
-          <p className="text-sm text-slate-600 mt-1">Fast makeovers: layout, color, décor, and styling.</p>
-        </a>
-        <a href="/services" className="rounded-xl border p-4 hover:bg-slate-50 transition">
-          <h3 className="font-semibold">Organization</h3>
-          <p className="text-sm text-slate-600 mt-1">Closets, pantry, garage, and whole-home systems.</p>
-        </a>
-        <a href="/services" className="rounded-xl border p-4 hover:bg-slate-50 transition">
-          <h3 className="font-semibold">Photo Digitizing</h3>
-          <p className="text-sm text-slate-600 mt-1">Bulk scanning with dust cleanup and precise auto-crop.</p>
-        </a>
-      </section>
+<section className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+  <a href="/services" className="rounded-xl border p-4 hover:bg-slate-50 transition">
+    <h3 className="font-semibold">Home Management</h3>
+    <p className="text-sm text-slate-600 mt-1">
+      Errands, coordination, scheduling, and personalized household support.
+    </p>
+  </a>
+
+  <a href="/services" className="rounded-xl border p-4 hover:bg-slate-50 transition">
+    <h3 className="font-semibold">Organization</h3>
+    <p className="text-sm text-slate-600 mt-1">
+      Closets, pantries, garages, downsizing, and systemized spaces.
+    </p>
+  </a>
+
+  <a href="/services" className="rounded-xl border p-4 hover:bg-slate-50 transition">
+    <h3 className="font-semibold">Caregiving Support</h3>
+    <p className="text-sm text-slate-600 mt-1">
+      Non-medical companion care and routine support, by request.
+    </p>
+  </a>
+
+  <a href="/services" className="rounded-xl border p-4 hover:bg-slate-50 transition">
+    <h3 className="font-semibold">Special Projects</h3>
+    <p className="text-sm text-slate-600 mt-1">
+      Long-distance moves, life transitions, and custom home projects.
+    </p>
+  </a>
+</section>
 
       {/* Gallery */}
       <section className="mt-12">
@@ -49,6 +64,30 @@ export default function Home() {
           <img className="rounded-lg border" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=800&auto=format&fit=crop" alt="Minimal office" />
         </div>
       </section>
+{/* Special Projects */}
+<section className="mt-12 rounded-2xl border p-6">
+  <h2 className="text-2xl font-semibold">Special Projects & Transitions</h2>
+  <p className="mt-2 text-slate-600 max-w-2xl">
+    Some needs don’t fit neatly into a category. We provide thoughtful support
+    for larger transitions — including long-distance and out-of-state moves —
+    offering planning, coordination, and on-site presence when needed.
+  </p>
+
+  <ul className="mt-4 grid gap-2 sm:grid-cols-2 text-sm text-slate-600 list-disc ml-5">
+    <li>Out-of-state relocation coordination</li>
+    <li>Downsizing and transition planning</li>
+    <li>Packing, labeling, and logistics oversight</li>
+    <li>Furniture assembly and home setup</li>
+    <li>Custom household or personal projects</li>
+  </ul>
+
+  <a
+    href="/contact"
+    className="mt-5 inline-block text-pink-600 font-semibold"
+  >
+    Tell us what you need →
+  </a>
+</section>
 
       {/* Reviews + affiliates */}
       <section className="mt-12 grid gap-4 md:grid-cols-2">
