@@ -18,15 +18,15 @@ export default function ServicesPage() {
             <h3 className="font-semibold">Organization</h3>
             <p className="text-sm text-slate-600 mt-1">
               In-home consultation
- One-on-one assistance
+ One-on-one assistance
 (additional helpers
 available at $60 per hour)
- Shopping for projects
+ Shopping for projects
 and supplies
- Management of
+ Management of
 consignment items
- Removal of donated items
- Garages and unfinished
+ Removal of donated items
+ Garages and unfinished
 basements
             </p>
           </div>
