@@ -17,7 +17,17 @@ export default function ServicesPage() {
           <div className="rounded-xl border p-4 hover:bg-slate-50 transition">
             <h3 className="font-semibold">Organization</h3>
             <p className="text-sm text-slate-600 mt-1">
-              Closets, pantry, garage, and whole-home systems.
+              In-home consultation
+ One-on-one assistance
+(additional helpers
+available at $60 per hour)
+ Shopping for projects
+and supplies
+ Management of
+consignment items
+ Removal of donated items
+ Garages and unfinished
+basements
             </p>
           </div>
           <div className="rounded-xl border p-4 hover:bg-slate-50 transition">
