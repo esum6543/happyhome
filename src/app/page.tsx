@@ -65,7 +65,11 @@ export default function Home() {
 />
 
 
-          <img className="rounded-lg border" src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?q=80&w=800&auto=format&fit=crop" alt="Organized kitchen" />
+          <img
+  className="rounded-lg border object-cover aspect-[4/3]"
+  src="/gallery/enelalogo.png"
+  alt="Organized towels"
+/>
           <img className="rounded-lg border" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=800&auto=format&fit=crop" alt="Cozy bedroom" />
           <img className="rounded-lg border" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=800&auto=format&fit=crop" alt="Minimal office" />
         </div>
