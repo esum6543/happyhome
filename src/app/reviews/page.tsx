@@ -34,6 +34,8 @@ export default function ReviewsPage() {
     method="POST"
     className="mt-6 max-w-xl mx-auto space-y-4"
   >
+    <input type="hidden" name="_redirect" value="/" />
+
     <div>
       <label className="block text-sm font-medium">Name</label>
       <input
