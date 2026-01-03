@@ -23,17 +23,61 @@ export default function ReviewsPage() {
           </div>
         </div>
 
-        <div className="mt-10 rounded-2xl border p-6 text-center">
-          <h3 className="text-xl font-semibold">Want to share your experience?</h3>
-          <p className="text-slate-600 mt-1">
-            We’d love to feature your feedback on our site.
-          </p>
-          <a
-            href="/contact"
-            className="mt-4 inline-block rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold"
-          >
-            Leave a review
-          </a>
+       <div className="mt-10 rounded-2xl border p-6">
+  <h3 className="text-xl font-semibold text-center">Want to share your experience?</h3>
+  <p className="text-slate-600 mt-1 text-center">
+    Send us a quick review below. Reviews are submitted for approval before being posted publicly.
+  </p>
+
+  <form
+    action="https://formspree.io/f/xqaqkzag"
+    method="POST"
+    className="mt-6 max-w-xl mx-auto space-y-4"
+  >
+    <div>
+      <label className="block text-sm font-medium">Name</label>
+      <input
+        name="name"
+        type="text"
+        required
+        className="mt-1 w-full rounded-lg border px-3 py-2"
+        placeholder="Your name"
+      />
+    </div>
+
+    <div>
+      <label className="block text-sm font-medium">Email</label>
+      <input
+        name="email"
+        type="email"
+        required
+        className="mt-1 w-full rounded-lg border px-3 py-2"
+        placeholder="you@email.com"
+      />
+    </div>
+
+    <div>
+      <label className="block text-sm font-medium">Your Review</label>
+      <textarea
+        name="message"
+        rows={5}
+        required
+        className="mt-1 w-full rounded-lg border px-3 py-2"
+        placeholder="Write your review…"
+      />
+    </div>
+
+    <input type="hidden" name="source" value="HappyHomeByEnela Reviews Page" />
+
+    <div className="text-center">
+      <button
+        type="submit"
+        className="inline-block rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold"
+      >
+        Submit review
+      </button>
+    </div>
+  </form>
         </div>
       </section>
     </main>
