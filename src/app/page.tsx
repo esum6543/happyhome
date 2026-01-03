@@ -66,7 +66,7 @@ export default function Home() {
 
 
           <img
-  className="rounded-lg border object-cover aspect-[5/3]"
+  className="rounded-lg border object-cover aspect-[2]"
   src="/gallery/enelalogo.png"
   alt="Organized towels"
 />
