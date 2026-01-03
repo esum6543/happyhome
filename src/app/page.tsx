@@ -109,7 +109,8 @@ export default function Home() {
         <div className="rounded-xl border p-5">
           <h3 className="font-semibold">Featured partners</h3>
           <ul className="text-sm text-slate-600 mt-2 list-disc ml-5 space-y-1">
-            <li><a className="text-pink-600" href="https://www.amazon.com/?tag=YOURTAG-20">Amazon (affiliate)</a></li>
+            <li><a className="text-pink-600" href="https://www.amazon.com/?tag=happyhomebyen-20
+">Amazon (affiliate)</a></li>
             <li><a className="text-pink-600" href="https://www.containerstore.com/?aid=YOURID">The Container Store (affiliate)</a></li>
             <li><a className="text-pink-600" href="https://example.com/?ref=yourcode">Local partner</a></li>
           </ul>
