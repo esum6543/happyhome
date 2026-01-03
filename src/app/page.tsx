@@ -60,9 +60,10 @@ export default function Home() {
         <div className="mt-4 grid gap-3 grid-cols-2 sm:grid-cols-4">
           <img
   className="rounded-lg border object-cover aspect-[4/3]"
-  src="/gallery/pic-towel.jpg"
+  src="/gallery/towels.png"
   alt="Organized towels"
 />
+
 
           <img className="rounded-lg border" src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?q=80&w=800&auto=format&fit=crop" alt="Organized kitchen" />
           <img className="rounded-lg border" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=800&auto=format&fit=crop" alt="Cozy bedroom" />
