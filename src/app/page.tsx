@@ -116,6 +116,12 @@ export default function Home() {
           <a href="/affiliates" className="mt-3 inline-block text-pink-600 font-semibold">See all affiliates →</a>
         </div>
       </section>
+{/* Affiliate Disclosure */}
+<div className="mt-6 text-center">
+  <p className="text-xs text-slate-500">
+    Disclosure: As an Amazon Associate, we earn from qualifying purchases.
+  </p>
+</div>
 
       {/* CTA */}
       <section className="mt-12 rounded-2xl border p-6 text-center">
