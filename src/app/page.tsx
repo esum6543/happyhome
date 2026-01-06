@@ -44,37 +44,37 @@ export default function Home() {
           Special Projects
         </a>
       </div>
-
-      {/* Headline + logo */}
+  {/* Headline + logo */}
       <div className="mt-10 max-w-xl">
-        <div className="flex items-center gap-3">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
-            HappyHome<span className="text-pink-500">ByEnela</span>
-          </h1>
-          <img
-            src="/gallery/enelalogo.png"
-            alt="Enela logo"
-            className="h-10 w-10 object-contain"
-          />
-        </div>
+  <h1 className="text-5xl sm:text-6xl font-extrabold leading-tight tracking-tight">
+    <span className="block">HAPPY</span>
+    <span className="block">HOME</span>
+    <span className="block text-pink-500">BY ENELA</span>
+  </h1>
 
-        <p className="mt-4 text-slate-700 text-base sm:text-lg">
-          Home styling • Organization • Photo digitizing in St. Louis.
-          Thoughtful support for calm spaces, smooth transitions, and preserved memories.
-        </p>
+  <p className="mt-6 text-base sm:text-lg text-slate-700 leading-relaxed">
+    Your home is an extension of your energy field. This is why practices like
+    cleaning your home, rearranging furniture, organizing your closet, and
+    letting go of objects that clutter your space can have a profound impact
+    on your mind, body, and spirit.
+  </p>
 
-        <div className="mt-6 flex flex-wrap gap-3">
-          <a
-            href="/contact"
-            className="rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold"
-          >
-            Get a free quote
-          </a>
-          <a href="/services" className="rounded-full border bg-white/80 backdrop-blur px-5 py-2.5">
-            View services
-          </a>
-        </div>
-      </div>
+  <div className="mt-8 flex flex-wrap gap-3">
+    <a
+      href="/contact"
+      className="rounded-full bg-pink-500 px-6 py-3 text-white font-semibold"
+    >
+      Get a free quote
+    </a>
+    <a
+      href="/services"
+      className="rounded-full border bg-white/80 backdrop-blur px-6 py-3 font-semibold"
+    >
+      View services
+    </a>
+  </div>
+</div>
+
     </div>
   </div>
 </section>
