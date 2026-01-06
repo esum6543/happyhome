@@ -49,7 +49,7 @@ export default function Home() {
   <h1 className="text-5xl sm:text-6xl font-extrabold leading-tight tracking-tight">
     <span className="block">
       HAPPY HOME{" "}
-      <span className="text-pink-400 font-semibold">BY</span>
+      <span className="text-pink-500 font-semibold">BY</span>
     </span>
     <span className="block text-pink-500">ENELA</span>
   </h1>
