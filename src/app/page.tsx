@@ -5,13 +5,18 @@ export default function Home() {
       {/* Hero */}
       <section>
         <h1 className="text-4xl font-bold tracking-tight">
-          HappyHome<span className="text-pink-500">ByEnela />
+          HappyHome<span className="text-pink-500">ByEnela <div className="flex items-center gap-3">
+  <h1 className="text-4xl font-bold tracking-tight">
+    HappyHome<span className="text-pink-500">ByEnela</span>
+  </h1>
 
+  <img
+    src="/gallery/enelalogo.png"
+    alt="Enela logo"
+    className="h-10 w-10 object-contain"
+  />
+</div>
 
-          <img
-  className="rounded-lg border object-contain aspect-square p-3"
-  src="/gallery/enelalogo.png"
-  alt="Enela logo"
 /></span>
         </h1>
         <p className="mt-3 text-slate-600">
