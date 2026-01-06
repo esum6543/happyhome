@@ -96,7 +96,7 @@ export default function Home() {
         </a>
 
         <a href="/services" className="rounded-xl border p-4 hover:bg-slate-50 transition">
-          <h3 className="font-semibold">Caregiving Support</h3>
+          <h3 className="font-semibold">Decluttering and downsizing</h3>
           <p className="mt-1 text-sm text-slate-600">
             Before the move, Packing, Labeling.
           </p>
