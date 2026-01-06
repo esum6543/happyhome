@@ -12,7 +12,7 @@ export default function Home() {
           <img
             src="/gallery/enelalogo.png"
             alt="Enela logo"
-            className="h-10 w-10 object-contain"
+            className="h-50 w-50 object-contain"
           />
         </div>
 
