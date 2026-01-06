@@ -40,9 +40,9 @@ export default function Home() {
   </a>
 
   <a href="/services" className="rounded-xl border p-4 hover:bg-slate-50 transition">
-    <h3 className="font-semibold">Caregiving Support</h3>
+    <h3 className="font-semibold"></h3>
     <p className="text-sm text-slate-600 mt-1">
-      Non-medical companion care and routine support, by request.
+      
     </p>
   </a>
 
@@ -84,7 +84,7 @@ export default function Home() {
   </p>
 
   <ul className="mt-4 grid gap-2 sm:grid-cols-2 text-sm text-slate-600 list-disc ml-5">
-    <li>Out-of-state relocation coordination</li>
+    <li></li>
     <li>Downsizing and transition planning</li>
     <li>Packing, labeling, and logistics oversight</li>
     <li>Furniture assembly and home setup</li>
