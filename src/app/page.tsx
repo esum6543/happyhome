@@ -3,23 +3,64 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-4xl px-6 py-12">
       {/* Hero */}
-      <section>
+   {/* Hero (big background) */}
+<section className="mt-2">
+  <div className="relative overflow-hidden rounded-3xl border">
+    {/* Background image */}
+    <div
+      className="h-[520px] bg-cover bg-center"
+      style={{ backgroundImage: "url('/hero/closet.jpg')" }}
+    />
+
+    {/* Soft overlay for readability */}
+    <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/55 to-white/10" />
+
+    {/* Content layer */}
+    <div className="absolute inset-0 p-6 sm:p-10">
+      {/* Top-left tabs */}
+      <div className="flex flex-wrap gap-2">
+        <a
+          href="/services#home-management"
+          className="rounded-full bg-white/90 backdrop-blur px-4 py-2 text-sm font-semibold border hover:bg-white transition"
+        >
+          Home Management
+        </a>
+        <a
+          href="/services#organization"
+          className="rounded-full bg-white/90 backdrop-blur px-4 py-2 text-sm font-semibold border hover:bg-white transition"
+        >
+          Organization
+        </a>
+        <a
+          href="/services#caregiving"
+          className="rounded-full bg-white/90 backdrop-blur px-4 py-2 text-sm font-semibold border hover:bg-white transition"
+        >
+          Caregiving Support
+        </a>
+        <a
+          href="/services#special-projects"
+          className="rounded-full bg-white/90 backdrop-blur px-4 py-2 text-sm font-semibold border hover:bg-white transition"
+        >
+          Special Projects
+        </a>
+      </div>
+
+      {/* Headline + logo */}
+      <div className="mt-10 max-w-xl">
         <div className="flex items-center gap-3">
-          <h1 className="text-4xl font-bold tracking-tight">
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
             HappyHome<span className="text-pink-500">ByEnela</span>
           </h1>
-
           <img
             src="/gallery/enelalogo.png"
             alt="Enela logo"
-            className="h-50 w-50 object-contain"
+            className="h-10 w-10 object-contain"
           />
         </div>
 
-        <p className="mt-3 text-slate-600">
-          Home styling • Organization • Photo digitizing in St. Louis. We make spaces calm,
-          beautiful, and easy to live in—plus we preserve your memories with high-quality
-          scanning and auto-crop.
+        <p className="mt-4 text-slate-700 text-base sm:text-lg">
+          Home styling • Organization • Photo digitizing in St. Louis.
+          Thoughtful support for calm spaces, smooth transitions, and preserved memories.
         </p>
 
         <div className="mt-6 flex flex-wrap gap-3">
@@ -29,11 +70,15 @@ export default function Home() {
           >
             Get a free quote
           </a>
-          <a href="/services" className="rounded-full border px-5 py-2.5">
+          <a href="/services" className="rounded-full border bg-white/80 backdrop-blur px-5 py-2.5">
             View services
           </a>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Services summary */}
       <section className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
