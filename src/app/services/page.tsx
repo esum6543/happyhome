@@ -31,18 +31,14 @@ export default function ServicesPage() {
 
           {/* Caregiving Support */}
           <div className="rounded-xl border p-4 hover:bg-slate-50 transition">
-            <h3 className="font-semibold">Caregiving Support</h3>
+            <h3 className="font-semibold"></h3>
             <p className="text-sm text-slate-600 mt-1">
-              Non-medical companion care and routine support, by request.
+              
             </p>
             <ul className="text-sm text-slate-600 mt-2 list-disc ml-5 space-y-1">
-              <li>Companion care and supervision</li>
-              <li>Routine support and presence</li>
-              <li>Light meal preparation</li>
-              <li>Medication reminders (no administration)</li>
-            </ul>
+              
             <p className="text-xs text-slate-500 mt-2">
-              Non-medical support only. Scope and availability confirmed per request.
+              
             </p>
           </div>
 
@@ -53,9 +49,8 @@ export default function ServicesPage() {
               Custom home needs and larger transitions, including out-of-state relocations.
             </p>
             <ul className="text-sm text-slate-600 mt-2 list-disc ml-5 space-y-1">
-              <li>Out-of-state relocation coordination</li>
-              <li>Downsizing and move planning</li>
-              <li>Packing, labeling, and logistics oversight</li>
+              
+              
               <li>Furniture assembly and home setup</li>
               <li>Vendor coordination and on-site presence</li>
             </ul>
