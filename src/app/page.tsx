@@ -1,29 +1,23 @@
-// src/app/page.tsx
-export default function Home() {
-  return (
-    <main className="mx-auto max-w-4xl px-6 py-12">
-      {/* Hero */}
-      <section>
-        <h1 className="text-4xl font-bold tracking-tight">
-          HappyHome<span className="text-pink-500">ByEnela <div className="flex items-center gap-3">
-  <h1 className="text-4xl font-bold tracking-tight">
-    HappyHome<span className="text-pink-500">ByEnela</span>
-  </h1>
+<section>
+  <div className="flex items-center gap-3">
+    <h1 className="text-4xl font-bold tracking-tight">
+      HappyHome<span className="text-pink-500">ByEnela</span>
+    </h1>
 
-  <img
-    src="/gallery/enelalogo.png"
-    alt="Enela logo"
-    className="h-10 w-10 object-contain"
-  />
-</div>
+    <img
+      src="/gallery/enelalogo.png"
+      alt="Enela logo"
+      className="h-10 w-10 object-contain"
+    />
+  </div>
 
-/></span>
-        </h1>
-        <p className="mt-3 text-slate-600">
-          Home styling • Organization • Photo digitizing in St. Louis.
-          We make spaces calm, beautiful, and easy to live in—plus we preserve
-          your memories with high-quality scanning and auto-crop.
-        </p>
+  <p className="mt-3 text-slate-600">
+    Home styling • Organization • Photo digitizing in St. Louis.
+    We make spaces calm, beautiful, and easy to live in—plus we preserve
+    your memories with high-quality scanning and auto-crop.
+  </p>
+</section>
+
 
         <div className="mt-6 flex flex-wrap gap-3">
           <a href="/contact" className="rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold">
