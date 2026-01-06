@@ -3,7 +3,8 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-4xl px-6 py-12">
       {/* Hero */}
-   {/* Hero (big background) */}
+ 
+{/* Hero (big background) */}
 <section className="mt-2">
   <div className="relative overflow-hidden rounded-3xl border">
     {/* Background image */}
@@ -25,58 +26,63 @@ export default function Home() {
         >
           Home Management
         </a>
+
         <a
           href="/services#organization"
           className="rounded-full bg-white/90 backdrop-blur px-4 py-2 text-sm font-semibold border hover:bg-white transition"
         >
           Organization
         </a>
+
         <a
-          href="/services#caregiving"
+          href="/services#decluttering"
           className="rounded-full bg-white/90 backdrop-blur px-4 py-2 text-sm font-semibold border hover:bg-white transition"
         >
-          Decluttering and downsizing
+          Decluttering &amp; Downsizing
         </a>
+
         <a
           href="/services#special-projects"
           className="rounded-full bg-white/90 backdrop-blur px-4 py-2 text-sm font-semibold border hover:bg-white transition"
         >
           Special Projects
-
-          </h1>
         </a>
       </div>
-<div className="mt-10 max-w-xl">
-  <h1 className="text-5xl sm:text-6xl font-extrabold leading-tight tracking-tight">
-    <span className="block">HAPPYHOME BY</span>
-    <span className="block text-pink-500">ENELA</span>
+
+      {/* Main headline text */}
+      <div className="mt-10 max-w-xl">
+        <h1 className="text-5xl sm:text-6xl font-extrabold leading-tight tracking-tight">
+          <span className="block">HAPPY</span>
+          <span className="block">HOME</span>
+          <span className="block text-pink-500">BY ENELA</span>
+        </h1>
+
+        <p className="mt-6 text-base sm:text-lg text-slate-700 leading-relaxed">
+          Your home is an extension of your energy field. This is why practices like
+          cleaning your home, rearranging furniture, organizing your closet, and letting go
+          of objects that are cluttering your space can have a profound impact on your own
+          mind, body, and spirit.
+        </p>
+
+        <div className="mt-8 flex flex-wrap gap-3">
+          <a
+            href="/contact"
+            className="rounded-full bg-pink-500 px-6 py-3 text-white font-semibold"
+          >
+            Get a free quote
+          </a>
+          <a
+            href="/services"
+            className="rounded-full border bg-white/80 backdrop-blur px-6 py-3 font-semibold"
+          >
+            View services
+          </a>
+        </div>
+      </div>
     </div>
-
-
-
-
-  <p className="mt-6 text-base sm:text-lg text-slate-700 leading-relaxed">
-    Your home is an extension of your energy field. This is why practices like
-    cleaning your home, rearranging furniture, organizing your closet, and
-    letting go of objects that clutter your space can have a profound impact
-    on your mind, body, and spirit.
-  </p>
-
-  <div className="mt-8 flex flex-wrap gap-3">
-    <a
-      href="/contact"
-      className="rounded-full bg-pink-500 px-6 py-3 text-white font-semibold"
-    >
-      Get a free quote
-    </a>
-    <a
-      href="/services"
-      className="rounded-full border bg-white/80 backdrop-blur px-6 py-3 font-semibold"
-    >
-      View services
-    </a>
   </div>
-</div>
+</section>
+
 
 
 </section>
