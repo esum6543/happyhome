@@ -1,4 +1,7 @@
-{/* Hero */}
+// src/app/page.tsx
+export default function Home() {
+  return (
+    <main className="mx-auto max-w-4xl px-6 py-12">{/* Hero */}
 <section>
   <div className="flex items-center gap-3">
     <h1 className="text-4xl font-bold tracking-tight">
