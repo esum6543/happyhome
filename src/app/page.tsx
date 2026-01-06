@@ -47,9 +47,14 @@ export default function Home() {
   {/* Headline + logo */}
       <div className="mt-10 max-w-xl">
   <h1 className="text-5xl sm:text-6xl font-extrabold leading-tight tracking-tight">
-    <span className="block">HAPPYHOME "text-lightpink-400">BY</span>
+    <span className="block">
+      HAPPY HOME{" "}
+      <span className="text-pink-400 font-semibold">BY</span>
+    </span>
     <span className="block text-pink-500">ENELA</span>
   </h1>
+</div>
+
 
   <p className="mt-6 text-base sm:text-lg text-slate-700 leading-relaxed">
     Your home is an extension of your energy field. This is why practices like
