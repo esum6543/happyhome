@@ -42,6 +42,8 @@ export default function Home() {
           className="rounded-full bg-white/90 backdrop-blur px-4 py-2 text-sm font-semibold border hover:bg-white transition"
         >
           Special Projects
+
+          </h1>
         </a>
       </div>
 <div className="mt-10 max-w-xl">
@@ -75,8 +77,7 @@ export default function Home() {
   </div>
 </div>
 
-    </div>
-  </div>
+
 </section>
 
 
