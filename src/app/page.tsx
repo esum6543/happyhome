@@ -35,7 +35,7 @@ export default function Home() {
           href="/services#caregiving"
           className="rounded-full bg-white/90 backdrop-blur px-4 py-2 text-sm font-semibold border hover:bg-white transition"
         >
-          Caregiving Support
+          Decluttering and downsizing
         </a>
         <a
           href="/services#special-projects"
@@ -47,7 +47,7 @@ export default function Home() {
   {/* Headline + logo */}
       <div className="mt-10 max-w-xl">
   <h1 className="text-5xl sm:text-6xl font-extrabold leading-tight tracking-tight">
-    <span className="block">HAPPYHOMEBY</span>
+    <span className="block">HAPPYHOME BY</span>
     <span className="block text-pink-500">BY ENELA</span>
   </h1>
 
@@ -98,7 +98,7 @@ export default function Home() {
         <a href="/services" className="rounded-xl border p-4 hover:bg-slate-50 transition">
           <h3 className="font-semibold">Caregiving Support</h3>
           <p className="mt-1 text-sm text-slate-600">
-            Non-medical companion care and routine support, by request.
+            Before the move, Packing, Labeling.
           </p>
         </a>
 
