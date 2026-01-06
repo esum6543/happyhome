@@ -5,7 +5,14 @@ export default function Home() {
       {/* Hero */}
       <section>
         <h1 className="text-4xl font-bold tracking-tight">
-          HappyHome<span className="text-pink-500">ByEnela</span>
+          HappyHome<span className="text-pink-500">ByEnela />
+
+
+          <img
+  className="rounded-lg border object-contain aspect-square p-3"
+  src="/gallery/enelalogo.png"
+  alt="Enela logo"
+/></span>
         </h1>
         <p className="mt-3 text-slate-600">
           Home styling • Organization • Photo digitizing in St. Louis.
