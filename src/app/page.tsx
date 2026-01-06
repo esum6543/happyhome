@@ -1,3 +1,4 @@
+{/* Hero */}
 <section>
   <div className="flex items-center gap-3">
     <h1 className="text-4xl font-bold tracking-tight">
@@ -12,10 +13,22 @@
   </div>
 
   <p className="mt-3 text-slate-600">
-    Home styling • Organization • Photo digitizing in St. Louis.
-    We make spaces calm, beautiful, and easy to live in—plus we preserve
-    your memories with high-quality scanning and auto-crop.
+    Home styling • Organization • Photo digitizing in St. Louis. We make spaces calm,
+    beautiful, and easy to live in—plus we preserve your memories with high-quality
+    scanning and auto-crop.
   </p>
+
+  <div className="mt-6 flex flex-wrap gap-3">
+    <a
+      href="/contact"
+      className="rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold"
+    >
+      Get a free quote
+    </a>
+    <a href="/services" className="rounded-full border px-5 py-2.5">
+      View services
+    </a>
+  </div>
 </section>
 
 
