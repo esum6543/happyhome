@@ -47,7 +47,7 @@ export default function Home() {
   {/* Headline + logo */}
       <div className="mt-10 max-w-xl">
   <h1 className="text-5xl sm:text-6xl font-extrabold leading-tight tracking-tight">
-    <span className="block">HAPPYHOME </span>
+    <span className="block">HAPPYHOME "text-lightpink-400">BY</span>
     <span className="block text-pink-500">ENELA</span>
   </h1>
 
