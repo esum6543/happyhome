@@ -22,7 +22,6 @@ export default function ServicesPage() {
             <ul className="text-sm text-slate-600 mt-2 list-disc ml-5 space-y-1">
               <li>In-home consultation</li>
               <li>One-on-one assistance</li>
-              <li>Additional helpers available at $60/hour</li>
               <li>Shopping for projects and supplies</li>
               <li>Management of consignment items</li>
               <li>Removal of donated or unwanted items</li>
