@@ -40,16 +40,16 @@ export default function Home() {
   </a>
 
   <a href="/services" className="rounded-xl border p-4 hover:bg-slate-50 transition">
-    <h3 className="font-semibold">Caregiving Support</h3>
+    <h3 className="font-semibold">Decluttering</h3>
     <p className="text-sm text-slate-600 mt-1">
-      Non-medical companion care and routine support, by request.
+      Downsizing, Packing, Labeling, removal of donated/unwanted items.
     </p>
   </a>
 
   <a href="/services" className="rounded-xl border p-4 hover:bg-slate-50 transition">
     <h3 className="font-semibold">Special Projects</h3>
     <p className="text-sm text-slate-600 mt-1">
-      Long-distance moves, life transitions, and custom home projects.
+      Long-distance moves, life transitions, and custom home projects. Set-up and organizaton.
     </p>
   </a>
 </section>
