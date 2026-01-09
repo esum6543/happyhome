@@ -8,7 +8,7 @@ export default function Home() {
           HappyHome<span className="text-pink-500">ByEnela</span>
         </h1>
         <p className="mt-3 text-slate-600">
-          HAPPYHOME BY ENELA
+          
 Your home is an extension of your energy field. This is why practices like cleaning your home, rearranging furniture, organizing your closet and getting rid of objects that are cluttering your space, can have a profound impact on your own mind, body and spirit.
         </p>
 
