@@ -8,9 +8,8 @@ export default function Home() {
           HappyHome<span className="text-pink-500">ByEnela</span>
         </h1>
         <p className="mt-3 text-slate-600">
-          Home styling • Organization • Photo digitizing in St. Louis.
-          We make spaces calm, beautiful, and easy to live in—plus we preserve
-          your memories with high-quality scanning and auto-crop.
+          HAPPYHOME BY ENELA
+Your home is an extension of your energy field. This is why practices like cleaning your home, rearranging furniture, organizing your closet and getting rid of objects that are cluttering your space, can have a profound impact on your own mind, body and spirit.
         </p>
 
         <div className="mt-6 flex flex-wrap gap-3">
