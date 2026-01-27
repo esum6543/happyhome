@@ -23,34 +23,49 @@ Your home is an extension of your energy field. This is why practices like clean
       </section>
 
       {/* Services summary */}
+
 <section className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-  <a href="/services" className="rounded-xl border p-4 hover:bg-slate-50 transition">
-    <h3 className="font-semibold">Home Management</h3>
-    <p className="text-sm text-slate-600 mt-1">
+  <a
+    href="/services"
+    className="rounded-xl bg-[#D1CCC7]/95 p-5 shadow-sm transition hover:bg-[#CEC9C3]"
+  >
+    <h3 className="font-semibold text-slate-900">Home Management</h3>
+    <p className="text-sm text-slate-800 mt-1">
       Errands, coordination, scheduling, and personalized household support.
     </p>
   </a>
 
-  <a href="/services" className="rounded-xl border p-4 hover:bg-slate-50 transition">
-    <h3 className="font-semibold">Organization</h3>
-    <p className="text-sm text-slate-600 mt-1">
+  <a
+    href="/services"
+    className="rounded-xl bg-[#D1CCC7]/95 p-5 shadow-sm transition hover:bg-[#CEC9C3]"
+  >
+    <h3 className="font-semibold text-slate-900">Organization</h3>
+    <p className="text-sm text-slate-800 mt-1">
       Closets, pantries, garages, downsizing, and systemized spaces.
     </p>
   </a>
 
-  <a href="/services" className="rounded-xl border p-4 hover:bg-slate-50 transition">
-    <h3 className="font-semibold">Decluttering</h3>
-    <p className="text-sm text-slate-600 mt-1">
-      Downsizing, Packing, Labeling, removal of donated/unwanted items.
+  <a
+    href="/services"
+    className="rounded-xl bg-[#D1CCC7]/95 p-5 shadow-sm transition hover:bg-[#CEC9C3]"
+  >
+    <h3 className="font-semibold text-slate-900">Decluttering &amp; Downsizing</h3>
+    <p className="text-sm text-slate-800 mt-1">
+      Downsizing, packing, labeling, and removal of donated or unwanted items.
     </p>
   </a>
 
-  <a href="/services" className="rounded-xl border p-4 hover:bg-slate-50 transition">
-    <h3 className="font-semibold">Special Projects</h3>
-    <p className="text-sm text-slate-600 mt-1">
-      Long-distance moves, life transitions, and custom home projects. Set-up and organizaton.
+  <a
+    href="/services"
+    className="rounded-xl bg-[#D1CCC7]/95 p-5 shadow-sm transition hover:bg-[#CEC9C3]"
+  >
+    <h3 className="font-semibold text-slate-900">Special Projects</h3>
+    <p className="text-sm text-slate-800 mt-1">
+      Long-distance moves, life transitions, and custom home projects.
     </p>
   </a>
+</section>
+
 </section>
 
       {/* Gallery */}
