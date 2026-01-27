@@ -22,17 +22,15 @@
 }
 
 body {
-  color: #111;}{
-  font-family: Arial, Helvetica, sans-serif;
-
   margin: 0;
   min-height: 100vh;
-  background-image: url("/HappyHome_SellSheet_Update.jpg");
+
+  background-image: url("/images/happyhome-hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
 }
+
 
 
