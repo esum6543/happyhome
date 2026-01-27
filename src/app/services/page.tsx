@@ -24,38 +24,41 @@ export default function ServicesPage() {
           </div>
 
           <div className="rounded-xl border p-4">
-            <h3 className="font-semibold">Decluttering and downsizing</h3>
-            <p className="mt-1 text-sm text-slate-600">
-              Packing
-Labeling
-Supervise/direct movers
-Unpacking after the move
-Removal of donated/
-unwantechems
-Set-up and organization
-Make calls on client's behalf
-Be present for utility and
-household services
-            </p>
+            <h3 className="font-semibold">Decluttering &amp; Downsizing</h3>
+            <ul className="mt-1 list-disc pl-4 text-sm text-slate-600">
+              <li>Packing</li>
+              <li>Labeling</li>
+              <li>Supervise/direct movers</li>
+              <li>Unpacking after the move</li>
+              <li>Removal of donated or unwanted items</li>
+              <li>Set-up and organization</li>
+              <li>Make calls on client&apos;s behalf</li>
+              <li>Be present for utility and household services</li>
+            </ul>
           </div>
 
           <div className="rounded-xl border p-4">
             <h3 className="font-semibold">Special Projects</h3>
-            <p className="mt-1 text-sm text-slate-600">
-              Long-distance moves, transitions, Vacation Home Watch
-Pick up mail
-Present for home repairs
-Turn lights on/off, arrands
-Cleaning
-Shopping
-Postal/shipping
-Gift buying
-Gift wrapping
-Emails and phone calls and custom projects.
-            </p>
+            <ul className="mt-1 list-disc pl-4 text-sm text-slate-600">
+              <li>Long-distance moves</li>
+              <li>Transitions</li>
+              <li>Vacation Home Watch</li>
+              <li>Pick up mail</li>
+              <li>Present for home repairs</li>
+              <li>Turn lights on/off</li>
+              <li>Errands</li>
+              <li>Cleaning</li>
+              <li>Shopping</li>
+              <li>Postal/shipping</li>
+              <li>Gift buying</li>
+              <li>Gift wrapping</li>
+              <li>Emails and phone calls</li>
+              <li>Custom projects</li>
+            </ul>
           </div>
         </div>
       </section>
     </main>
   );
 }
+
