@@ -100,12 +100,29 @@ Your home is an extension of your energy field. This is why practices like clean
 
       {/* Reviews + affiliates */}
       <section className="mt-12 grid gap-4 md:grid-cols-2">
-        <div className="rounded-xl border p-5">
-          <h3 className="font-semibold">What clients say</h3>
-          <p className="text-sm text-slate-600 mt-2">“Enela transformed our living room in one afternoon. It finally feels like home.” — S., St. Louis</p>
-          <a href="/reviews" className="mt-3 inline-block text-pink-600 font-semibold">Read & leave a review →</a>
-        </div>
-        <div className="rounded-xl border p-5">
+        <div className="rounded-xl bg-[#D1CCC7]/95 p-6 shadow-sm">
+  <h3 className="text-lg font-semibold text-slate-900">
+    What clients say
+  </h3>
+
+  <p className="mt-2 text-sm text-slate-800">
+    “Enela transformed our living room in one afternoon. It finally feels like home.”
+  </p>
+
+  <p className="mt-1 text-sm text-slate-700">
+    — S., St. Louis
+  </p>
+
+  <a
+    href="/reviews"
+    className="mt-3 inline-block text-sm font-medium text-slate-900 underline"
+  >
+    Read &amp; leave a review →
+  </a>
+</div>
+
+        <div className="rounded-xl bg-[#D1CCC7]/95 p-6 shadow-sm">
+
           <h3 className="font-semibold">Featured partners</h3>
           <ul className="text-sm text-slate-600 mt-2 list-disc ml-5 space-y-1">
             <li><a className="text-pink-600" href="https://www.amazon.com/?tag=happyhomebyen-20
