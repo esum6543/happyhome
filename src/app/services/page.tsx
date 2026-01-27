@@ -24,16 +24,34 @@ export default function ServicesPage() {
           </div>
 
           <div className="rounded-xl border p-4">
-            <h3 className="font-semibold">Caregiving Support</h3>
+            <h3 className="font-semibold">Decluttering and downsizing</h3>
             <p className="mt-1 text-sm text-slate-600">
-              Non-medical companion care and routine support.
+              Packing
+Labeling
+Supervise/direct movers
+Unpacking after the move
+Removal of donated/
+unwantechems
+Set-up and organization
+Make calls on client's behalf
+Be present for utility and
+household services
             </p>
           </div>
 
           <div className="rounded-xl border p-4">
             <h3 className="font-semibold">Special Projects</h3>
             <p className="mt-1 text-sm text-slate-600">
-              Long-distance moves, transitions, and custom projects.
+              Long-distance moves, transitions, Vacation Home Watch
+Pick up mail
+Present for home repairs
+Turn lights on/off, arrands
+Cleaning
+Shopping
+Postal/shipping
+Gift buying
+Gift wrapping
+Emails and phone calls and custom projects.
             </p>
           </div>
         </div>
