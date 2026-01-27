@@ -89,7 +89,8 @@ Your home is an extension of your energy field. This is why practices like clean
         </div>
       </section>
 {/* Special Projects */}
-<section className="mt-12 rounded-2xl border p-6">
+<section className="mt-12 rounded-2xl bg-[#D1CCC7]/95 p-8 text-center shadow-sm">
+
   <h2 className="text-2xl font-semibold">Special Projects & Transitions</h2>
   <p className="mt-2 text-slate-600 max-w-2xl">
     Some needs don’t fit neatly into a category. We provide thoughtful support
