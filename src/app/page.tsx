@@ -3,32 +3,35 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-4xl px-6 py-12">
       {/* Hero */}
-      <section>
-        <h1 className="text-4xl font-bold tracking-tight">
-          HappyHome<span className="text-pink-500">ByEnela</span>
-        </h1>
+     
+     <section className="rounded-2xl bg-[#F5F5F3]/95 p-8 shadow-sm">
+  <h1 className="text-4xl font-bold tracking-tight text-slate-900">
+    HappyHome<span className="text-pink-500">ByEnela</span>
+  </h1>
 
-        <p className="mt-3 text-slate-600">
-          Your home is an extension of your energy field. This is why practices
-          like cleaning your home, rearranging furniture, organizing your closet,
-          and getting rid of objects that are cluttering your space can have a
-          profound impact on your own mind, body, and spirit.
-        </p>
+  <p className="mt-4 max-w-2xl text-slate-800">
+    Your home is an extension of your energy field. This is why practices
+    like cleaning your home, rearranging furniture, organizing your closet,
+    and getting rid of objects that are cluttering your space can have a
+    profound impact on your own mind, body, and spirit.
+  </p>
 
-        <div className="mt-6 flex flex-wrap gap-3">
-          <a
-            href="/contact"
-            className="rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold"
-          >
-            Get a free quote
-          </a>
-          <a
-            href="/services"
-            className="rounded-full border px-5 py-2.5"
-          >
-            View services
-          </a>
-        </div>
+  <div className="mt-6 flex flex-wrap gap-3">
+    <a
+      href="/contact"
+      className="rounded-full bg-pink-500 px-6 py-2.5 text-white font-semibold"
+    >
+      Get a free quote
+    </a>
+
+    <a
+      href="/services"
+      className="rounded-full border border-slate-300 px-6 py-2.5 text-slate-900"
+    >
+      View services
+    </a>
+  </div>
+
       </section>
 
       {/* Services summary */}
