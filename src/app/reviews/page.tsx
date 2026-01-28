@@ -26,7 +26,6 @@ export default function ReviewsPage() {
       setStatus("success");
       form.reset();
 
-      // Show a brief thank-you, then go home
       setTimeout(() => router.push("/"), 900);
     } catch {
       setStatus("error");
@@ -35,66 +34,80 @@ export default function ReviewsPage() {
 
   return (
     <main className="mx-auto max-w-4xl px-6 py-12">
-      <section>
-        <h1 className="text-3xl font-bold tracking-tight">Reviews</h1>
-        <p className="mt-3 text-slate-600">
+      {/* Outer readable surface */}
+      <section className="rounded-2xl bg-[#EFEDEA] p-8 shadow-md">
+        <h1 className="text-3xl font-bold tracking-tight text-slate-900">
+          Reviews
+        </h1>
+
+        <p className="mt-3 text-slate-700 max-w-2xl">
           A few kind words from recent clients in the St. Louis area.
         </p>
 
+        {/* Sample reviews */}
         <div className="mt-8 grid gap-4 md:grid-cols-2">
-          <div className="rounded-xl border p-5">
-            <h3 className="font-semibold">Living Room Refresh</h3>
-            <p className="text-sm text-slate-600 mt-2">
-              “Enela transformed our living room in one afternoon. It finally feels like home.” — S., St. Louis
+          <div className="rounded-xl bg-white/70 p-6 shadow-sm">
+            <h3 className="font-semibold text-slate-900">Living Room Refresh</h3>
+            <p className="mt-2 text-sm text-slate-800">
+              “Enela transformed our living room in one afternoon. It finally feels like home.”
+            </p>
+            <p className="mt-1 text-sm text-slate-700">
+              — S., St. Louis
             </p>
           </div>
 
-          <div className="rounded-xl border p-5">
-            <h3 className="font-semibold">Photo Digitizing</h3>
-            <p className="text-sm text-slate-600 mt-2">
-              “The scans look amazing — clear, cropped, and ready to print. A priceless service.” — A., Oakville
+          <div className="rounded-xl bg-white/70 p-6 shadow-sm">
+            <h3 className="font-semibold text-slate-900">Photo Digitizing</h3>
+            <p className="mt-2 text-sm text-slate-800">
+              “The scans look amazing — clear, cropped, and ready to print. A priceless service.”
+            </p>
+            <p className="mt-1 text-sm text-slate-700">
+              — A., Oakville
             </p>
           </div>
         </div>
 
-        <div className="mt-10 rounded-2xl border p-6">
-          <h3 className="text-xl font-semibold text-center">Want to share your experience?</h3>
-          <p className="text-slate-600 mt-1 text-center">
+        {/* Review form */}
+        <div className="mt-10 rounded-2xl bg-[#D1CCC7]/95 p-8 shadow-sm">
+          <h3 className="text-xl font-semibold text-slate-900 text-center">
+            Want to share your experience?
+          </h3>
+          <p className="mt-2 text-slate-800 text-center">
             Send us a quick review below. Reviews are submitted for approval before being posted publicly.
           </p>
 
-          <form onSubmit={handleSubmit} className="mt-6 max-w-xl mx-auto space-y-4">
+          <form onSubmit={handleSubmit} className="mt-6 mx-auto max-w-xl space-y-4">
             <div>
-              <label className="block text-sm font-medium">Name</label>
+              <label className="block text-sm font-medium text-slate-900">Name</label>
               <input
                 name="name"
                 type="text"
                 required
-                className="mt-1 w-full rounded-lg border px-3 py-2"
+                className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-200"
                 placeholder="Your name"
                 disabled={status === "submitting"}
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium">Email</label>
+              <label className="block text-sm font-medium text-slate-900">Email</label>
               <input
                 name="email"
                 type="email"
                 required
-                className="mt-1 w-full rounded-lg border px-3 py-2"
+                className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-200"
                 placeholder="you@email.com"
                 disabled={status === "submitting"}
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium">Your Review</label>
+              <label className="block text-sm font-medium text-slate-900">Your Review</label>
               <textarea
                 name="message"
                 rows={5}
                 required
-                className="mt-1 w-full rounded-lg border px-3 py-2"
+                className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-200"
                 placeholder="Write your review…"
                 disabled={status === "submitting"}
               />
@@ -102,17 +115,17 @@ export default function ReviewsPage() {
 
             <input type="hidden" name="source" value="HappyHomeByEnela Reviews Page" />
 
-            <div className="text-center">
+            <div className="text-center pt-2">
               <button
                 type="submit"
-                className="inline-block rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold disabled:opacity-60"
+                className="inline-block rounded-full bg-pink-500 px-6 py-2.5 text-white font-semibold disabled:opacity-60"
                 disabled={status === "submitting"}
               >
                 {status === "submitting" ? "Sending..." : "Submit review"}
               </button>
 
               {status === "success" && (
-                <p className="mt-3 text-sm text-slate-600">
+                <p className="mt-3 text-sm text-slate-700">
                   Thank you! Redirecting you home…
                 </p>
               )}
