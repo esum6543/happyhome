@@ -33,7 +33,7 @@ body {
 @media (max-width: 768px) {
   body {
     background-attachment: scroll;
-    background-size: contain;
+    background-size: 90%;
     background-position: center 100%;
     background-repeat: no-repeat;
   }
