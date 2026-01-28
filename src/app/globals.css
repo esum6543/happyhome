@@ -32,13 +32,13 @@ body {
 /* Mobile fix — show full image, no weird cropping */
 @media (max-width: 768px) {
   body {
-    background-attachment: scroll;   /* fixed breaks on mobile */
-    background-size: 100% auto;      /* full width, keep proportions */
-    background-position: top center;
-    background-repeat: repeat-y;     /* repeat down the page */
-    background-color: #ffffff;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
   }
 }
+
 
 
 
