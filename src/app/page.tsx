@@ -4,7 +4,7 @@ export default function Home() {
     <main className="mx-auto max-w-4xl px-6 py-12">
       {/* Hero */}
      
-     <section className="rounded-2xl bg-[#F6E7EC]/95 p-8 shadow-sm">
+     <section className="rounded-xl bg-[#D1CCC7]/95 p-5 shadow-sm transition hover:bg-[#CEC9C3]">
   <h1 className="text-4xl font-bold tracking-tight text-slate-900">
     HappyHome<span className="text-pink-500">ByEnela</span>
   </h1>
