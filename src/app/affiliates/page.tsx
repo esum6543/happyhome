@@ -41,18 +41,14 @@ export default function AffiliatesPage() {
           </li>
 
           <li className="rounded-xl bg-white/70 p-4 shadow-sm">
-            <a
-              href="https://example.com/?ref=yourcode"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-pink-600 underline"
-            >
-              Local Partner
-            </a>{" "}
-            <span className="text-slate-700">
-              — St. Louis-based craftspeople and small businesses.
-            </span>
-          </li>
+  <span className="font-semibold text-slate-900">
+    Local Partners
+  </span>{" "}
+  <span className="text-slate-700">
+    — St. Louis-based craftspeople and small businesses we trust and collaborate with.
+  </span>
+</li>
+
         </ul>
 
         <div className="mt-10 rounded-2xl bg-[#D1CCC7]/95 p-8 text-center shadow-sm">
