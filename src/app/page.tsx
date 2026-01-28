@@ -4,7 +4,7 @@ export default function Home() {
     <main className="mx-auto max-w-4xl px-6 py-12">
       {/* Hero */}
      
-     <section className="rounded-2xl bg-[#F5F5F3]/95 p-8 shadow-sm">
+     <section className="rounded-2xl bg-[#F6E7EC]/95 p-8 shadow-sm">
   <h1 className="text-4xl font-bold tracking-tight text-slate-900">
     HappyHome<span className="text-pink-500">ByEnela</span>
   </h1>
