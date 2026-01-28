@@ -26,11 +26,10 @@ export default function ContactPage() {
       });
 
       if (res.ok) {
-        router.push("/thank-you"); // go to your thank-you page (which auto-redirects home)
+        router.push("/thank-you");
         return;
       }
 
-      // Try to read a Formspree error message without using `any`
       let msg = "Something went wrong. Please try again.";
       try {
         const j: unknown = await res.json();
@@ -41,7 +40,7 @@ export default function ContactPage() {
           }
         }
       } catch {
-        // ignore JSON parse error, keep default msg
+        // ignore JSON parse error
       }
       setError(msg);
     } catch {
@@ -53,44 +52,74 @@ export default function ContactPage() {
 
   return (
     <main className="mx-auto max-w-4xl px-6 py-12">
-      <section>
-        <h1 className="text-3xl font-bold tracking-tight">Contact Us</h1>
-        <p className="mt-3 text-slate-600">
-          We’ll respond within 1–2 business days. Free consults in St. Louis and virtual sessions anywhere.
+      <section className="rounded-2xl bg-[#EFEDEA] p-8 shadow-md">
+        <h1 className="text-3xl font-bold tracking-tight text-slate-900">
+          Contact Us
+        </h1>
+
+        <p className="mt-3 text-slate-700 max-w-2xl">
+          We&apos;ll respond within 1–2 business days. Free consults in St. Louis
+          and virtual sessions anywhere.
         </p>
 
         <form className="mt-6 grid gap-4" onSubmit={onSubmit}>
           {/* Honeypot spam trap */}
-          <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
+          <input
+            type="text"
+            name="_gotcha"
+            className="hidden"
+            tabIndex={-1}
+            autoComplete="off"
+          />
 
           <label className="grid gap-1">
-            <span>Name</span>
-            <input name="name" required className="block w-full border p-2 rounded" />
+            <span className="text-sm font-medium text-slate-900">Name</span>
+            <input
+              name="name"
+              required
+              className="block w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-200"
+            />
           </label>
 
           <label className="grid gap-1">
-            <span>Email</span>
-            <input type="email" name="email" required className="block w-full border p-2 rounded" />
+            <span className="text-sm font-medium text-slate-900">Email</span>
+            <input
+              type="email"
+              name="email"
+              required
+              className="block w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-200"
+            />
           </label>
 
           <label className="grid gap-1">
-            <span>Project details</span>
-            <textarea name="message" rows={5} required className="block w-full border p-2 rounded" />
+            <span className="text-sm font-medium text-slate-900">
+              Project details
+            </span>
+            <textarea
+              name="message"
+              rows={5}
+              required
+              className="block w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-200"
+            />
           </label>
 
-          <button
-            type="submit"
-            disabled={submitting}
-            className="rounded-full bg-pink-500 px-5 py-2.5 text-white font-semibold disabled:opacity-60"
-          >
-            {submitting ? "Sending..." : "Send"}
-          </button>
+          <div className="pt-2">
+            <button
+              type="submit"
+              disabled={submitting}
+              className="rounded-full bg-pink-500 px-6 py-2.5 text-white font-semibold disabled:opacity-60"
+            >
+              {submitting ? "Sending..." : "Send"}
+            </button>
 
-          {error && <p className="text-red-600 text-sm mt-2">{error}</p>}
+            {error && (
+              <p className="mt-3 text-sm text-red-600">
+                {error}
+              </p>
+            )}
+          </div>
         </form>
       </section>
     </main>
   );
 }
-
-
