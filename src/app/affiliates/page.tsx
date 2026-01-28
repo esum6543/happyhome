@@ -14,7 +14,7 @@ export default function AffiliatesPage() {
         <ul className="mt-6 space-y-3 text-slate-800">
           <li className="rounded-xl bg-white/70 p-4 shadow-sm">
             <a
-              href="https://www.amazon.com/?tag=YOURTAG-20"
+              href="https://www.amazon.com/?tag=happyhomebyen-20"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-pink-600 underline"
