@@ -154,7 +154,75 @@ export default function Home() {
 
           <a
             href="/reviews"
-            className="mt-3 inline-bloc
+            className="mt-3 inline-block text-sm font-medium text-slate-900 underline"
+          >
+            Read &amp; leave a review →
+          </a>
+        </div>
 
-   
+        <div className="rounded-xl bg-[#D1CCC7]/95 p-6 shadow-sm">
+          <h3 className="font-semibold text-slate-900">Featured partners</h3>
 
+          <ul className="mt-2 ml-5 list-disc space-y-1 text-sm text-slate-800">
+            <li>
+              <a
+                className="text-pink-600"
+                href="https://www.amazon.com/?tag=happyhomebyen-20"
+              >
+                Amazon (affiliate)
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-pink-600"
+                href="https://www.containerstore.com/?aid=YOURID"
+              >
+                The Container Store (affiliate)
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-pink-600"
+                href="https://example.com/?ref=yourcode"
+              >
+                Local partner
+              </a>
+            </li>
+          </ul>
+
+          <a
+            href="/affiliates"
+            className="mt-3 inline-block font-semibold text-pink-600"
+          >
+            See all affiliates →
+          </a>
+        </div>
+      </section>
+
+      {/* Affiliate Disclosure */}
+      <div className="mt-6 text-center">
+        <p className="text-xs text-slate-500">
+          Disclosure: As an Amazon Associate, we earn from qualifying purchases.
+        </p>
+      </div>
+
+      {/* CTA */}
+      <section className="mt-12 rounded-2xl bg-[#D1CCC7]/95 p-8 text-center shadow-sm">
+        <h3 className="text-xl font-semibold text-slate-900">
+          Ready to refresh your space?
+        </h3>
+
+        <p className="mt-1 text-slate-800">
+          Free consults in St. Louis and virtual sessions anywhere.
+        </p>
+
+        <a
+          href="/contact"
+          className="mt-4 inline-block rounded-full bg-pink-500 px-6 py-2.5 font-semibold text-white"
+        >
+          Book a free consult
+        </a>
+      </section>
+    </main>
+  );
+}
