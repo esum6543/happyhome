@@ -11,7 +11,8 @@ export default function ServicesPage() {
           Thoughtful support for homes, families, and life transitions.
         </p>
 
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 items-start">
+
           <div className="rounded-xl bg-[#EFEDEA] p-5 shadow-md transition hover:shadow-lg">
             <h3 className="font-semibold text-slate-900">
               Home Management
