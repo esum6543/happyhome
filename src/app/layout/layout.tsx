@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "HappyHome ByEnela",
+  title: "HappyHomeByEnela",
   description: "Home styling • Organization • Photo digitizing in St. Louis.",
 };
 
