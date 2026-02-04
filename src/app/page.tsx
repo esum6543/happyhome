@@ -6,7 +6,7 @@ export default function Home() {
      
      <section className="rounded-xl bg-[#D1CCC7]/95 p-5 shadow-sm transition hover:bg-[#CEC9C3]">
   <h1 className="text-4xl font-bold tracking-tight text-slate-900">
-    HappyHome<span className="text-pink-500">ByEnela</span>
+    HappyHome <span className="text-pink-500">ByEnela</span>
   </h1>
 
   <p className="mt-4 max-w-2xl text-slate-800">
