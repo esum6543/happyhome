@@ -1,4 +1,6 @@
 // src/app/page.tsx
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="mx-auto max-w-4xl px-6 py-12">
@@ -81,34 +83,37 @@ export default function Home() {
 
       {/* Gallery */}
       <section className="mt-12">
-        <h2 className="text-2xl font-semibold">Before &amp; After</h2>
+  <h2 className="text-2xl font-semibold">Before &amp; After</h2>
 
-        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
-          <img
-            className="aspect-[4/3] rounded-lg border object-cover"
-            src="/gallery/towels.png"
-            alt="Organized towels"
-          />
+  <Link href="/before-after" className="block">
+    <div className="mt-4 grid cursor-pointer grid-cols-2 gap-3 sm:grid-cols-4">
+      <img
+        className="aspect-[4/3] rounded-lg border object-cover hover:opacity-90 transition"
+        src="/gallery/towels.png"
+        alt="Organized towels"
+      />
 
-          <img
-            className="aspect-square rounded-lg border object-contain p-3"
-            src="/gallery/enelalogo.png"
-            alt="Enela logo"
-          />
+      <img
+        className="aspect-square rounded-lg border object-contain p-3 hover:opacity-90 transition"
+        src="/gallery/enelalogo.png"
+        alt="Enela logo"
+      />
 
-          <img
-            className="rounded-lg border"
-            src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=800&auto=format&fit=crop"
-            alt="Cozy bedroom"
-          />
+      <img
+        className="rounded-lg border hover:opacity-90 transition"
+        src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=800&auto=format&fit=crop"
+        alt="Cozy bedroom"
+      />
 
-          <img
-            className="rounded-lg border"
-            src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=800&auto=format&fit=crop"
-            alt="Minimal office"
-          />
-        </div>
-      </section>
+      <img
+        className="rounded-lg border hover:opacity-90 transition"
+        src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=800&auto=format&fit=crop"
+        alt="Minimal office"
+      />
+    </div>
+  </Link>
+</section>
+
 
       {/* Special Projects & Transitions */}
       <section className="mt-12 rounded-2xl bg-[#D1CCC7]/95 p-8 shadow-sm">
