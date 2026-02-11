@@ -16,11 +16,20 @@ export default function BeforeAfterPage() {
             <div className="mt-4 grid gap-4 sm:grid-cols-2">
               <figure className="rounded-xl bg-black/20 p-3">
                 <figcaption className="text-sm text-white/80">Before</figcaption>
-                <div className="mt-2 aspect-[4/3] w-full overflow-hidden rounded-lg bg-white/10" />
+                <img
+                  src="/gallery/towels.png"
+                  alt="Pantry before"
+                  className="mt-2 aspect-[4/3] w-full rounded-lg object-cover"
+                />
               </figure>
+
               <figure className="rounded-xl bg-black/20 p-3">
                 <figcaption className="text-sm text-white/80">After</figcaption>
-                <div className="mt-2 aspect-[4/3] w-full overflow-hidden rounded-lg bg-white/10" />
+                <img
+                  src="/gallery/enelalogo.png"
+                  alt="Pantry after"
+                  className="mt-2 aspect-[4/3] w-full rounded-lg object-cover"
+                />
               </figure>
             </div>
           </section>
@@ -31,11 +40,20 @@ export default function BeforeAfterPage() {
             <div className="mt-4 grid gap-4 sm:grid-cols-2">
               <figure className="rounded-xl bg-black/20 p-3">
                 <figcaption className="text-sm text-white/80">Before</figcaption>
-                <div className="mt-2 aspect-[4/3] w-full overflow-hidden rounded-lg bg-white/10" />
+                <img
+                  src="/gallery/towels.png"
+                  alt="Closet before"
+                  className="mt-2 aspect-[4/3] w-full rounded-lg object-cover"
+                />
               </figure>
+
               <figure className="rounded-xl bg-black/20 p-3">
                 <figcaption className="text-sm text-white/80">After</figcaption>
-                <div className="mt-2 aspect-[4/3] w-full overflow-hidden rounded-lg bg-white/10" />
+                <img
+                  src="/gallery/enelalogo.png"
+                  alt="Closet after"
+                  className="mt-2 aspect-[4/3] w-full rounded-lg object-cover"
+                />
               </figure>
             </div>
           </section>
