@@ -41,7 +41,7 @@ export default function BeforeAfterPage() {
   />
 
   <img
-    src="/gallery/before-after/IMG_3737.JEP"
+    src="/gallery/before-after/IMG_3737.JPEG"
     alt="Pantry after 2"
     className="mt-3 aspect-[4/3] w-full rounded-lg object-cover"
   />
@@ -57,7 +57,7 @@ export default function BeforeAfterPage() {
               <figure className="rounded-xl bg-black/20 p-3">
                 <figcaption className="text-sm text-white/80">Before</figcaption>
                 <img
-                  src="/gallery/towels.png"
+                  src="/gallery/before-after/towels.png"
                   alt="Closet before"
                   className="mt-2 aspect-[4/3] w-full rounded-lg object-cover"
                 />
@@ -66,7 +66,7 @@ export default function BeforeAfterPage() {
               <figure className="rounded-xl bg-black/20 p-3">
                 <figcaption className="text-sm text-white/80">After</figcaption>
                 <img
-                  src="/gallery/enelalogo.png"
+                  src="/gallery/logos/enelalogo.png"
                   alt="Closet after"
                   className="mt-2 aspect-[4/3] w-full rounded-lg object-cover"
                 />
