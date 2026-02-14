@@ -15,22 +15,38 @@ export default function BeforeAfterPage() {
             <h2 className="text-lg font-medium text-white">Pantry Refresh</h2>
             <div className="mt-4 grid gap-4 sm:grid-cols-2">
               <figure className="rounded-xl bg-black/20 p-3">
-                <figcaption className="text-sm text-white/80">Before</figcaption>
-                <img
-                  src="/gallery/before-after/towels.png"
-                  alt="Pantry before"
-                  className="mt-2 aspect-[4/3] w-full rounded-lg object-cover"
-                />
-              </figure>
+  <figcaption className="text-sm text-white/80">Before</figcaption>
+
+  <img
+    src="/gallery/before-after/IMG_3729.JPEG"
+    alt="Pantry before 1"
+    className="mt-2 aspect-[4/3] w-full rounded-lg object-cover"
+  />
+
+  <img
+    src="/gallery/before-after/IMG_3730.JPEG"
+    alt="Pantry before 2"
+    className="mt-3 aspect-[4/3] w-full rounded-lg object-cover"
+  />
+</figure>
+
 
               <figure className="rounded-xl bg-black/20 p-3">
-                <figcaption className="text-sm text-white/80">After</figcaption>
-                <img
-                  src="/gallery/logos/enelalogo.png"
-                  alt="Pantry after"
-                  className="mt-2 aspect-[4/3] w-full rounded-lg object-cover"
-                />
-              </figure>
+  <figcaption className="text-sm text-white/80">After</figcaption>
+
+  <img
+    src="/gallery/before-after/IMG_3735.JPEG"
+    alt="Pantry after 1"
+    className="mt-2 aspect-[4/3] w-full rounded-lg object-cover"
+  />
+
+  <img
+    src="/gallery/before-after/IMG_3737.JEP"
+    alt="Pantry after 2"
+    className="mt-3 aspect-[4/3] w-full rounded-lg object-cover"
+  />
+</figure>
+
             </div>
           </section>
 
