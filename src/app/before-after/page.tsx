@@ -10,56 +10,58 @@ export default function BeforeAfterPage() {
         </p>
 
         <div className="mt-10 grid gap-8 md:grid-cols-2">
-          {/* Card 1 */}
+          {/* Card 1 — Closet Organizing */}
           <section className="rounded-2xl bg-white/10 p-4 ring-1 ring-white/15 backdrop-blur">
             <h2 className="text-lg font-medium text-white">Closet Organizing</h2>
+
             <div className="mt-4 grid gap-4 sm:grid-cols-2">
+              {/* BEFORE */}
               <figure className="rounded-xl bg-black/20 p-3">
-  <figcaption className="text-sm text-white/80">Before</figcaption>
+                <figcaption className="text-sm text-white/80">Before</figcaption>
 
-  <img
-    src="/gallery/before-after/IMG_3729.JPEG"
-    alt="Pantry before 1"
-    className="mt-2 aspect-[4/3] w-full rounded-lg object-cover"
-  />
+                <img
+                  src="/gallery/before-after/IMG_3729.JPEG"
+                  alt="Closet before 1"
+                  className="mt-2 aspect-[4/3] w-full rounded-lg object-cover object-top"
+                />
 
-  <img
-    src="/gallery/before-after/IMG_3730.JPEG"
-    alt="Pantry before 2"
-    className="mt-3 aspect-[4/3] w-full rounded-lg object-cover"
-  />
-</figure>
+                <img
+                  src="/gallery/before-after/IMG_3730.JPEG"
+                  alt="Closet before 2"
+                  className="mt-3 aspect-[4/3] w-full rounded-lg object-cover object-top"
+                />
+              </figure>
 
-
+              {/* AFTER */}
               <figure className="rounded-xl bg-black/20 p-3">
-  <figcaption className="text-sm text-white/80">After</figcaption>
+                <figcaption className="text-sm text-white/80">After</figcaption>
 
-  <img
-    src="/gallery/before-after/IMG_3735.JPEG"
-    alt="Pantry after 1"
-    className="mt-2 aspect-[4/3] w-full rounded-lg object-cover"
-  />
+                <img
+                  src="/gallery/before-after/IMG_3735.JPEG"
+                  alt="Closet after 1"
+                  className="mt-2 aspect-[4/3] w-full rounded-lg object-cover object-top"
+                />
 
-  <img
-    src="/gallery/before-after/IMG_3737.JPEG"
-    alt="Pantry after 2"
-    className="mt-3 aspect-[4/3] w-full rounded-lg object-cover"
-  />
-</figure>
-
+                <img
+                  src="/gallery/before-after/IMG_3737.JPEG"
+                  alt="Closet after 2"
+                  className="mt-3 aspect-[4/3] w-full rounded-lg object-cover object-top"
+                />
+              </figure>
             </div>
           </section>
 
-          {/* Card 2 */}
+          {/* Card 2 — Pantry Refresh */}
           <section className="rounded-2xl bg-white/10 p-4 ring-1 ring-white/15 backdrop-blur">
             <h2 className="text-lg font-medium text-white">Pantry Refresh</h2>
+
             <div className="mt-4 grid gap-4 sm:grid-cols-2">
               <figure className="rounded-xl bg-black/20 p-3">
                 <figcaption className="text-sm text-white/80">Before</figcaption>
                 <img
                   src="/gallery/before-after/towels.png"
-                  alt="Closet before"
-                  className="mt-2 aspect-[4/3] w-full rounded-lg object-cover"
+                  alt="Pantry before"
+                  className="mt-2 aspect-[4/3] w-full rounded-lg object-cover object-top"
                 />
               </figure>
 
@@ -67,8 +69,8 @@ export default function BeforeAfterPage() {
                 <figcaption className="text-sm text-white/80">After</figcaption>
                 <img
                   src="/gallery/logos/enelalogo.png"
-                  alt="Closet after"
-                  className="mt-2 aspect-[4/3] w-full rounded-lg object-cover"
+                  alt="Pantry after"
+                  className="mt-2 aspect-[4/3] w-full rounded-lg object-cover object-top"
                 />
               </figure>
             </div>
@@ -78,3 +80,4 @@ export default function BeforeAfterPage() {
     </main>
   );
 }
+
