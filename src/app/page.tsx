@@ -5,59 +5,54 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-4xl px-6 py-12">
       {/* Hero */}
-     
-     <section className="rounded-xl bg-[#D1CCC7]/95 p-5 shadow-sm transition hover:bg-[#CEC9C3]">
-  <h1 className="text-4xl font-bold tracking-tight text-slate-900">
-    HappyHome <span className="text-pink-500">ByEnela</span>
-  </h1>
+      <section className="rounded-xl bg-[#D1CCC7]/95 p-5 shadow-sm transition hover:bg-[#CEC9C3]">
+        <h1 className="text-4xl font-bold tracking-tight text-slate-900">
+          HappyHome <span className="text-pink-500">ByEnela</span>
+        </h1>
 
-  <p className="mt-4 max-w-2xl text-slate-800">
-    Your home is an extension of your energy field. This is why practices
-    like cleaning your home, rearranging furniture, organizing your closet,
-    and getting rid of objects that are cluttering your space can have a
-    profound impact on your own mind, body, and spirit.
-  </p>
+        <p className="mt-4 max-w-2xl text-slate-800">
+          Your home is an extension of your energy field. This is why practices
+          like cleaning your home, rearranging furniture, organizing your closet,
+          and getting rid of objects that are cluttering your space can have a
+          profound impact on your own mind, body, and spirit.
+        </p>
 
-  <div className="mt-6 flex flex-wrap gap-3">
-    <a
-      href="/contact"
-      className="rounded-full bg-pink-500 px-6 py-2.5 text-white font-semibold"
-    >
-      Get a free quote
-    </a>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <a
+            href="/contact"
+            className="rounded-full bg-pink-500 px-6 py-2.5 font-semibold text-white"
+          >
+            Get a free quote
+          </a>
 
-    <a
-      href="/services"
-      className="rounded-full border border-slate-300 px-6 py-2.5 text-slate-900"
-    >
-      View services
-    </a>
-  </div>
-
+          <a
+            href="/services"
+            className="rounded-full border border-slate-300 px-6 py-2.5 text-slate-900"
+          >
+            View services
+          </a>
+        </div>
       </section>
-</section>  {/* <-- this closes your Hero section */}
 
-{/* About preview */}
-<section className="mt-10 rounded-xl bg-[#D1CCC7]/95 p-6 shadow-sm transition hover:bg-[#CEC9C3]">
-  <h2 className="text-xl font-semibold text-slate-900">
-    About Enela
-  </h2>
+      {/* About preview */}
+      <section className="mt-10 rounded-xl bg-[#D1CCC7]/95 p-6 shadow-sm transition hover:bg-[#CEC9C3]">
+        <h2 className="text-xl font-semibold text-slate-900">About Enela</h2>
 
-  <p className="mt-2 text-slate-800 max-w-2xl">
-    I believe the spaces we live in should support our daily lives—not add to the stress of it. 
-    My work focuses on creating functional, well-organized environments that feel calm, intentional, and easy to maintain.
-  </p>
+        <p className="mt-2 max-w-2xl text-slate-800">
+          I believe the spaces we live in should support our daily lives—not add
+          to the stress of it. My work focuses on creating functional,
+          well-organized environments that feel calm, intentional, and easy to
+          maintain.
+        </p>
 
-  <Link
-    href="/about"
-    className="mt-4 inline-block font-semibold text-pink-600"
-  >
-    Learn more →
-  </Link>
-</section>
+        <Link
+          href="/about"
+          className="mt-4 inline-block font-semibold text-pink-600"
+        >
+          Learn more →
+        </Link>
+      </section>
 
-{/* Services summary */}
-<section className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {/* Services summary */}
       <section className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <a
@@ -66,7 +61,8 @@ export default function Home() {
         >
           <h3 className="font-semibold text-slate-900">Home Management</h3>
           <p className="mt-1 text-sm text-slate-800">
-            Errands, coordination, scheduling, and personalized household support.
+            Errands, coordination, scheduling, and personalized household
+            support.
           </p>
         </a>
 
@@ -88,7 +84,8 @@ export default function Home() {
             Decluttering &amp; Downsizing
           </h3>
           <p className="mt-1 text-sm text-slate-800">
-            Downsizing, packing, labeling, and removal of donated or unwanted items.
+            Downsizing, packing, labeling, and removal of donated or unwanted
+            items.
           </p>
         </a>
 
@@ -105,37 +102,36 @@ export default function Home() {
 
       {/* Gallery */}
       <section className="mt-12">
-  <h2 className="text-2xl font-semibold">Before &amp; After</h2>
+        <h2 className="text-2xl font-semibold">Before &amp; After</h2>
 
-  <Link href="/before-after" className="block">
-    <div className="mt-4 grid cursor-pointer grid-cols-2 gap-3 sm:grid-cols-4">
-      <img
-        className="aspect-[4/3] rounded-lg border object-cover hover:opacity-90 transition"
-        src="/gallery/towels.png"
-        alt="Organized towels"
-      />
+        <Link href="/before-after" className="block">
+          <div className="mt-4 grid cursor-pointer grid-cols-2 gap-3 sm:grid-cols-4">
+            <img
+              className="aspect-[4/3] rounded-lg border object-cover hover:opacity-90 transition"
+              src="/gallery/towels.png"
+              alt="Organized towels"
+            />
 
-      <img
-        className="aspect-square rounded-lg border object-contain p-3 hover:opacity-90 transition"
-        src="/gallery/enelalogo.png"
-        alt="Enela logo"
-      />
+            <img
+              className="aspect-square rounded-lg border object-contain p-3 hover:opacity-90 transition"
+              src="/gallery/enelalogo.png"
+              alt="Enela logo"
+            />
 
-      <img
-        className="rounded-lg border hover:opacity-90 transition"
-        src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=800&auto=format&fit=crop"
-        alt="Cozy bedroom"
-      />
+            <img
+              className="rounded-lg border hover:opacity-90 transition"
+              src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=800&auto=format&fit=crop"
+              alt="Cozy bedroom"
+            />
 
-      <img
-        className="rounded-lg border hover:opacity-90 transition"
-        src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=800&auto=format&fit=crop"
-        alt="Minimal office"
-      />
-    </div>
-  </Link>
-</section>
-
+            <img
+              className="rounded-lg border hover:opacity-90 transition"
+              src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=800&auto=format&fit=crop"
+              alt="Minimal office"
+            />
+          </div>
+        </Link>
+      </section>
 
       {/* Special Projects & Transitions */}
       <section className="mt-12 rounded-2xl bg-[#D1CCC7]/95 p-8 shadow-sm">
@@ -178,9 +174,7 @@ export default function Home() {
             like home.”
           </p>
 
-          <p className="mt-1 text-sm text-slate-700">
-            — S., St. Louis
-          </p>
+          <p className="mt-1 text-sm text-slate-700">— S., St. Louis</p>
 
           <a
             href="/reviews"
