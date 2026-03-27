@@ -35,7 +35,29 @@ export default function Home() {
   </div>
 
       </section>
+</section>  {/* <-- this closes your Hero section */}
 
+{/* About preview */}
+<section className="mt-10 rounded-xl bg-[#D1CCC7]/95 p-6 shadow-sm transition hover:bg-[#CEC9C3]">
+  <h2 className="text-xl font-semibold text-slate-900">
+    About Enela
+  </h2>
+
+  <p className="mt-2 text-slate-800 max-w-2xl">
+    I believe the spaces we live in should support our daily lives—not add to the stress of it. 
+    My work focuses on creating functional, well-organized environments that feel calm, intentional, and easy to maintain.
+  </p>
+
+  <Link
+    href="/about"
+    className="mt-4 inline-block font-semibold text-pink-600"
+  >
+    Learn more →
+  </Link>
+</section>
+
+{/* Services summary */}
+<section className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {/* Services summary */}
       <section className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <a
