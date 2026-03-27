@@ -36,7 +36,7 @@ export default function Home() {
 
       {/* About preview */}
       <section className="mt-10 rounded-xl bg-[#D1CCC7]/95 p-6 shadow-sm transition hover:bg-[#CEC9C3]">
-        <h2 className="text-xl font-semibold text-slate-900">About Enela</h2>
+        <h2 className="text-xl font-semibold text-slate-900">About</h2>
 
         <p className="mt-2 max-w-2xl text-slate-800">
           I believe the spaces we live in should support our daily lives—not add
