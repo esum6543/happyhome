@@ -90,7 +90,7 @@ export default function Home() {
         </a>
 
         <a
-          href="/services"
+          href="/services/special-projects"
           className="rounded-xl bg-[#D1CCC7]/95 p-5 shadow-sm transition hover:bg-[#CEC9C3]"
         >
           <h3 className="font-semibold text-slate-900">Special Projects</h3>
