@@ -56,7 +56,7 @@ export default function Home() {
       {/* Services summary */}
       <section className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <a
-          href="/services"
+          href="/services/home-management"
           className="rounded-xl bg-[#D1CCC7]/95 p-5 shadow-sm transition hover:bg-[#CEC9C3]"
         >
           <h3 className="font-semibold text-slate-900">Home Management</h3>
