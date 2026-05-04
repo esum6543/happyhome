@@ -2,7 +2,7 @@ export default function DeclutteringDownsizingPage() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-12">
       <img
-        src="/gallery/19874.webp"
+        src="/gallery/19872.webp"
         alt="Decluttering and Downsizing"
         className="w-full rounded-2xl object-contain shadow-md"
       />
