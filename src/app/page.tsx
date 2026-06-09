@@ -17,13 +17,7 @@ export default function Home() {
           profound impact on your own mind, body, and spirit.
         </p>
 
-        <p className="text-lg font-bold text-pink-600">
-  🌟 AVAILABLE 365 DAYS A YEAR 🌟
-       </p>
-       <p className="mt-1 font-medium text-slate-800">
-        Call or Text • 314-630-6113
-       </p>
-
+   
         <div className="mt-6 flex flex-wrap gap-3">
           <a
             href="/contact"
