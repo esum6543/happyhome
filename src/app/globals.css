@@ -4,7 +4,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --brand: #ec4899;   /* pink */
+  --brand: #ec4899;
   --brand-2: #f472b6;
 }
 
@@ -15,7 +15,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
-/* Base layout + background (desktop) */
+/* Base layout + background */
 body {
   margin: 0;
   min-height: 100vh;
@@ -29,15 +29,18 @@ body {
   background-attachment: fixed;
 }
 
-/* Mobile fix — show full image, no weird cropping */
+/* Mobile fix */
 @media (max-width: 768px) {
   body {
     background-attachment: scroll;
-    background-size: 80% cover;
+    background-size: cover;
     background-position: center 20%;
     background-repeat: no-repeat;
   }
-  .neon-sign {
+}
+
+/* Neon sign */
+.neon-sign {
   background: #ff5fa2;
   color: white;
   border: 2px solid #ffd6e8;
@@ -76,7 +79,6 @@ body {
       0 0 60px #ff5fa2;
   }
 }
-
 
 
 
