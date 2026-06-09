@@ -55,7 +55,7 @@ export default function Home() {
       </section>
 
       {/* Services summary */}
-      <section className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <section className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <a
           href="/services/home-management"
           className="rounded-xl bg-[#D1CCC7]/95 p-5 shadow-sm transition hover:bg-[#CEC9C3]"
@@ -99,6 +99,18 @@ export default function Home() {
             Long-distance moves, life transitions, and custom home projects.
           </p>
         </a>
+        <a
+          href="/services/teen-room-reset"
+          className="rounded-xl bg-[#D1CCC7]/95 p-5 shadow-sm transition hover:bg-[#CEC9C3]"
+        >
+          <h3 className="font-semibold text-slate-900">
+            Teen Room Reset
+          </h3>
+          <p className="mt-1 text-sm text-slate-800">
+            Back-to-school room refreshes, closet organization, dresser organization,
+            study spaces, and simple systems your teen can maintain.
+          </p>
+         </a>
       </section>
 
       {/* Gallery */}
