@@ -37,6 +37,45 @@ body {
     background-position: center 20%;
     background-repeat: no-repeat;
   }
+  .neon-sign {
+  background: #ff5fa2;
+  color: white;
+  border: 2px solid #ffd6e8;
+  border-radius: 18px;
+  padding: 18px 24px;
+  text-align: center;
+  box-shadow:
+    0 0 10px #ff5fa2,
+    0 0 25px #ff5fa2,
+    0 0 45px #ff5fa2;
+  animation: glowPulse 2s infinite alternate;
+}
+
+.neon-sign p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.neon-sign span {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@keyframes glowPulse {
+  from {
+    box-shadow:
+      0 0 8px #ff5fa2,
+      0 0 18px #ff5fa2;
+  }
+  to {
+    box-shadow:
+      0 0 18px #ff5fa2,
+      0 0 38px #ff5fa2,
+      0 0 60px #ff5fa2;
+  }
+}
 }
 
 
