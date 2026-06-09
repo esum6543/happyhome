@@ -1,4 +1,5 @@
 // src/app/services/page.tsx
+
 export default function ServicesPage() {
   return (
     <main className="mx-auto max-w-4xl px-6 py-12">
@@ -11,7 +12,7 @@ export default function ServicesPage() {
           Thoughtful support for homes, families, and life transitions.
         </p>
 
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 items-start">
+        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 items-start">
 
           <div className="rounded-xl bg-[#EFEDEA] p-5 shadow-md transition hover:shadow-lg">
             <h3 className="font-semibold text-slate-900">
@@ -70,6 +71,25 @@ export default function ServicesPage() {
               <li>Custom projects</li>
             </ul>
           </div>
+
+          <a
+            href="/services/teen-room-reset"
+            className="block rounded-xl bg-[#EFEDEA] p-5 shadow-md transition hover:shadow-lg"
+          >
+            <h3 className="font-semibold text-slate-900">
+              Teen Room Reset &amp; Refresh
+            </h3>
+
+            <ul className="mt-2 list-disc pl-4 text-sm text-slate-800 space-y-1">
+              <li>Closet organization</li>
+              <li>Dresser organization</li>
+              <li>Desk and study area setup</li>
+              <li>Decluttering and donation sorting</li>
+              <li>Personalized organization systems</li>
+              <li>Back-to-school room refresh</li>
+            </ul>
+          </a>
+
         </div>
       </section>
     </main>
