@@ -155,8 +155,11 @@ export default function ReviewsPage() {
               <p>
                 It can be tough to deal with transitions and organization.
                 Enela gets it organized, gets it done, and helps one feel
-                comfortable and happy along the way. Enela truly makes for a
-                Happy Home!”
+                comfortable and happy along the way. 
+              </p>
+              
+              <p>
+                Enela truly makes for a Happy Home!"
               </p>
             </div>
 
