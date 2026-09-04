@@ -159,7 +159,7 @@ export default function ReviewsPage() {
               </p>
               
               <p>
-                Enela truly makes for a Happy Home!"
+                Enela truly makes for a Happy Home!”
               </p>
             </div>
 
