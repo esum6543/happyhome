@@ -124,10 +124,42 @@ export default function ReviewsPage() {
             </div>
 
             <p className="mt-5 text-sm font-medium text-slate-600">
-              — Kim, St. Louis, Missouri
-            </p>
-          </div>
-        </div>
+  — Kim, St. Louis, Missouri
+</p>
+</div>
+
+<div className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm md:col-span-2">
+  <h3 className="text-lg font-semibold text-slate-900">
+    Home Organization, Moving &amp; Project Support
+  </h3>
+
+  <div className="mt-3 space-y-4 leading-7 text-slate-700">
+    <p>
+      “Enela has been a lifesaver over the past few years. She has done
+      everything—helping us thin and organize closets, organizing storage
+      in my garage, organizing storage throughout my house, supervising
+      moving activities, organizing offsite storage facilities, and
+      handling our photo digitizing project.
+    </p>
+
+    <p>
+      She combines the organizational and executive functional skill set
+      of a project manager with the respectful and kind nature of a
+      respected confidante or, in many ways, a therapist.
+    </p>
+
+    <p>
+      It can be tough to deal with transitions and organization. Enela
+      gets it organized, gets it done, and helps one feel comfortable and
+      happy along the way. Enela truly makes for a Happy Home!”
+    </p>
+  </div>
+
+  <p className="mt-5 text-sm font-medium text-slate-600">
+    — Kip, St. Louis, Missouri
+  </p>
+</div>
+            
 
         {/* Leave a review button */}
         <div className="mt-10 text-center">
